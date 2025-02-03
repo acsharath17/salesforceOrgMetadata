@@ -1,0 +1,17 @@
+<apex:component controller="Custom_comp" >
+    <apex:attribute name="Contact" type="Contact" description="contact firstname and lastname" required="true"/>
+    <apex:pageBlockSection >
+        <apex:inputField value="{!Contact.Firstname}"/>
+        <apex:inputField value="{!Contact.Lastname}"/>
+    </apex:pageBlockSection>
+    
+    <apex:pageBlock >
+    
+    
+    <apex:pageBlockTable value="{!all_con}" var="c">
+        <apex:column value="{!c.name}"/>
+        <apex:column value="{!c.email}"/>
+        <apex:column value="{!c.phone}"/>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:component>

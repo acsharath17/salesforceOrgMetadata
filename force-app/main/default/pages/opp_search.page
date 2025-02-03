@@ -1,0 +1,83 @@
+<apex:page standardController="Opportunity" extensions="opp_search_v1" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection id="pg1" >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Stage</apex:outputLabel>
+                    
+                    <apex:selectList size="1" value="{!selected_stage}" multiselect="false">
+                        <apex:selectOptions value="{!Stage_name}" /> <apex:actionSupport event="onchange" reRender="pg"  />
+                    </apex:selectList>
+                    
+                </apex:pageBlockSectionItem>
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Stage</apex:outputLabel>
+                    
+                    <apex:selectList size="1" value="{!acc}" multiselect="false">
+                        <apex:selectOptions value="{!acc_name1}" /> 
+                    </apex:selectList>
+                    
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Get Records" action="{!sel_opp}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <!--<apex:pageBlockTable value="{!all_opp}" var="p" id="pg">
+                <apex:column >
+                    <apex:inputCheckbox />
+                </apex:column>
+                <apex:column value="{!p.name}"/>
+                <apex:column value="{!p.stagename}"/>
+            </apex:pageBlockTable>-->
+            
+            <apex:pageBlockTable value="{!wrap_opty}" var="w" id="pg">
+                <apex:column >
+                    <apex:inputCheckbox value="{!w.sel}"/> <apex:actionSupport event="onclick" action="{!sel_opp}" reRender="selopp"/>
+                </apex:column>
+                <apex:column value="{!w.opp.name}"/>
+                <apex:column value="{!w.opp.stagename}"/>
+                <apex:column value="{!w.opp.Amount}"/>
+            </apex:pageBlockTable>
+            
+            <!--<table>
+            <tr>
+                <td>Nmae</td>
+            </tr>
+            
+            <apex:repeat value="{!wrap_opty}" var="ss">
+                <tr><td>{!ss.opp.name}</td> </tr>   
+            </apex:repeat>
+            
+        </table>-->
+            
+            
+        </apex:pageBlock>
+        
+        
+        <table>
+            <tr>
+                <td>Nmae</td>
+            </tr>
+            
+            <apex:repeat value="{!selected_opp}" var="ss">
+                <tr><td>{!ss.name}</td> </tr>   
+            </apex:repeat>
+            
+        </table>
+        
+        <!--<apex:pageBlock title="Selected Opportunity">
+            <apex:pageBlockTable value="{!selected_opp}" var="ss" id="selopp">
+                <apex:column value="{!ss.name}"/>
+                <apex:column value="{!ss.stagename}"/>
+                <apex:column value="{!ss.Amount}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>-->
+        
+    </apex:form>
+</apex:page>

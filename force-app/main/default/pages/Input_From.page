@@ -1,0 +1,122 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardController="Account">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+      
+  <head>
+  <title>Salesforce Lightning Design System Trailhead Module</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS110, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+    <body class="slds">
+
+    
+ <div>
+    <div aria-hidden="false" role="dialog" class="slds-modal slds-modal--form slds-fade-in-open">
+      <div class="slds-modal__container slds-modal--form">
+        <div class="slds-modal__header">
+          <button class="slds-button slds-button--neutral slds-button--small">Cancel</button>
+          <button class="slds-button slds-button--neutral slds-button--small slds-button--brand">Save</button>
+          <h2 class="slds-text-heading--medium">New Contact</h2>
+        </div>
+        <div class="slds-modal__content">
+          <h3 class="slds-section-title--divider">Section Information</h3>
+          <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputNameSample1">Name Suffix</label>
+              <div class="slds-form-element__control">
+                <input id="inputNameSample1" class="slds-input" type="text" placeholder="Ms." />
+              </div>
+            </div>
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputNameSample2">First Name</label>
+              <div class="slds-form-element__control">
+                <input id="inputNameSample2" class="slds-input" type="text" placeholder="Esther" />
+              </div>
+            </div>
+            
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputNameSample3">Last Name</label>
+              <div class="slds-form-element__control">
+                <input id="inputNameSample3" class="slds-input" type="text" placeholder="Lewis" />
+              </div>
+            </div>
+            
+            
+            <div class="slds-m-top--medium large" data-select="multi" data-scope="single" data-typeahead="true">
+              <div class="slds-form-element">
+                <label class="slds-form-element__label" for="lookup">Lookup</label>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+                  <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+                    <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+                  </svg>
+                  <input id="lookup" class="slds-input" type="text" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-activedescendant="" />
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="slds-form-element slds-m-top--medium large">
+              <label class="slds-form-element__label" for="select-01">Select</label>
+              <div class="slds-select_container">
+                <select id="select-01" class="slds-select">
+                  <option>Select an Option</option>
+                </select>
+              </div>
+            </div>
+            
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputSample2">Text Input</label>
+              <div class="slds-form-element__control">
+                <input id="inputSample2" class="slds-input" type="text" />
+              </div>
+            </div>
+          </div>
+          
+          
+          <h3 class="slds-section-title--divider">Section Information</h3>
+          
+          <div class="slds-form--stacked slds-p-around--medium slds-m-bottom--x-small">
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputSample3">Text Input</label>
+              <div class="slds-form-element__control">
+                <input id="inputSample3" class="slds-input" type="text" />
+              </div>
+            </div>
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputSample4">Text Input</label>
+              <div class="slds-form-element__control">
+                <input id="inputSample4" class="slds-input" type="text" />
+              </div>
+            </div>
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputSample5">Text Input</label>
+              <div class="slds-form-element__control">
+                <input id="inputSample5" class="slds-input" type="text" />
+              </div>
+            </div>
+            
+            <div class="slds-form-element">
+              <label class="slds-form-element__label" for="inputSample6">Text Input</label>
+              <div class="slds-form-element__control">
+                <input id="inputSample6" class="slds-input" type="text" />
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--<div class="slds-backdrop slds-backdrop--open"></div>-->
+  </div>
+    
+    </body>
+
+  </html>
+</apex:page>

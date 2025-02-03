@@ -1,0 +1,52 @@
+<apex:page sidebar="false"
+           showChat="false"
+           showHeader="false"
+           contentType="application/msword#Test.doc" 
+           cache="true">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<style>
+    @page Main {
+        mso-header:h1;
+        mso-footer:f1;
+    }
+    div.Main{
+        page:Main;
+    }
+    p.MyFoot, li.MyFoot, div.MyFoot{
+        mso-pagination:widow-orphan;
+        tab-stops:center 216.0pt right 432.0pt;
+    }
+    p.MyHead {
+
+    }
+</style>
+</head> 
+
+<div class="Main">
+    <div style="mso-element:header" id="h1">
+        <p class="MyHead">Header Text</p>
+    </div>
+    <div style="mso-element:footer" id="f1">
+        <p class="MyFoot">
+            <span style='mso-field-code:" FILENAME "'> </span>
+            <span style='mso-tab-count:2'></span>
+            Page <span style='mso-field-code:" PAGE "'></span> of <span style='mso-field-code:" NUMPAGES "'></span>
+        </p>
+    </div>
+</div>
+
+
+<apex:pageBlock >
+    <p> One </p>
+    <p> Two </p>
+    <p> THree </p>
+    <p> Four </p>
+    <p> Five </p>
+    <p> Six </p>
+    <p> Seven </p>
+
+</apex:pageBlock>
+
+</apex:page>

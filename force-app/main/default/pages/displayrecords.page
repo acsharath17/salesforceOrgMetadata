@@ -1,0 +1,27 @@
+<apex:page controller="display_records" >
+    <apex:sectionHeader title="Get Records" subtitle="Display Records"/>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                
+                    <apex:outputLabel >Select Object</apex:outputLabel>
+                    <apex:selectList value="{!selected_obj}" id="obj" multiselect="false" size="1">
+                        <apex:selectOptions value="{!so}"/>
+                    </apex:selectList>
+                    
+                </apex:pageBlockSectionItem>
+                              
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockTable value="{!acc}" var="a" id="Account">
+                    <apex:column value="{!a.name}"/>
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockTable value="{!con}" var="c" id="Contact">
+                    <apex:column value="{!c.lastname}"/>
+                </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

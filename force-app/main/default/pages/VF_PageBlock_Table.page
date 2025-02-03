@@ -1,0 +1,29 @@
+<apex:page controller="get_opportunity" tabStyle="contact" >
+    <br/><br/><br/>
+    
+    <table border="1px" width="400px">
+        <tr>
+            <td>Opportunity Name</td>
+            <td>Opportunity Amount</td>
+            <td>Opportunity Stage</td>
+        </tr>
+        
+        <apex:repeat value="{!opp1}" var="v">
+            <tr>
+                <td>{!v.name}</td>
+                <td>{!v.Amount}</td>
+                <td>{!v.StageName}</td>
+            </tr>
+        </apex:repeat>
+        
+    </table>
+    <br/><br/><br/>
+    <apex:pageBlock >    
+        <apex:pageBlockTable value="{!Opp_List}" var="tab">
+            <apex:column value="{!tab.Account.name}"/>
+            <apex:column value="{!tab.name}"/>
+            <apex:column value="{!tab.Amount}"/>
+            <apex:column value="{!tab.owner.name}"/>
+        </apex:pageBlockTable>       
+    </apex:pageBlock>
+</apex:page>

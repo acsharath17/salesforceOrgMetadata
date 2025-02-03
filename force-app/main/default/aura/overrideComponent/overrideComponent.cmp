@@ -1,0 +1,3 @@
+<aura:component implements="lightning:actionOverride" access="global" controller="overrideStandabuttonwithLC">
+    <lightning:button label="New Contact" variant="brand" onclick="{!c.createAccount}"/>
+</aura:component>

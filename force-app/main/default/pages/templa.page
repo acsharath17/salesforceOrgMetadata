@@ -1,0 +1,12 @@
+<apex:page standardController="case" >
+    <apex:outputText value="(template) This is before the header"/><br/>
+    <apex:insert name="header"/><br/>
+    
+    <apex:outputText /><br/>
+    <apex:insert name="body"/><br/>
+    
+    <apex:outputText value="(template) This is footer"/><br/>
+    <apex:insert name="footer"/>
+ 
+    
+</apex:page>

@@ -1,0 +1,184 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" standardController="Account" recordSetVar="Account">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+      
+  <head>
+  <title>Salesforce Lightning Design System Trailhead Module</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS110, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+    <body class="slds">
+
+        
+        <table class="slds-table slds-table--bordered">
+    <thead>
+      <tr class="slds-text-heading--label">
+        <th class="slds-cell-shrink">
+          <label class="slds-checkbox">
+            <input type="checkbox" name="options" />
+            <span class="slds-checkbox--faux"></span>
+            <span class="slds-assistive-text">Select All</span>
+          </label>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Opportunity Name
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Account Name
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Close Date
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Stage
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Confidence
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Amount
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-is-sortable" scope="col">
+          <div class="slds-truncate">Contact
+            <button class="slds-button slds-button--icon-bare">
+              <svg aria-hidden="true" class="slds-button__icon slds-button__icon--small">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#arrowdown"></use>
+              </svg>
+              <span class="slds-assistive-text">Sort</span>
+            </button>
+          </div>
+        </th>
+        <th class="slds-cell-shrink"></th>
+      </tr>
+    </thead>
+    <tbody>
+    
+      <apex:repeat value="{!Account}" var="a">
+      <tr class="slds-hint-parent">
+        <td class="slds-cell-shrink" data-label="Select Row">
+          <label class="slds-checkbox">
+            <input type="checkbox" name="options" />
+            <span class="slds-checkbox--faux"></span>
+            <span class="slds-assistive-text">Select Row</span>
+          </label>
+        </td>
+        <th class="slds-truncate" scope="row" data-label="Opportunity Name">{!A.id}</th>
+        <td class="slds-truncate" data-label="Account Name">{!a.name}</td>
+        <td class="" data-label="Close Date">{!a.type}</td>
+        <td class="slds-truncate" data-label="Prospecting">{!a.industry}</td>
+        <td class="" data-label="Confidence">{!a.fax}</td>
+        <td class="" data-label="Amount">{!a.phone}</td>
+        <td class="slds-truncate" data-label="Contact">
+          <a href="#void">jrogers@cloudhub.com</a>
+        </td>
+               
+        <td class="slds-cell-shrink" data-label="Actions">
+          <button class="slds-button slds-button--icon-border-filled slds-button--icon-x-small">
+            <svg aria-hidden="true" class="slds-button__icon slds-button__icon--hint slds-button__icon--small">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#down"></use>
+            </svg>
+            <span class="slds-assistive-text">Show More</span>
+          </button>
+        </td>
+      </tr>            
+      </apex:repeat>
+      
+    </tbody>
+  </table>
+  
+  <ul class="slds-list--vertical slds-has-cards--space has-selections">
+    <li class="slds-list__item">
+      <div class="slds-tile slds-tile--board">
+        <p class="slds-tile__title slds-truncate">
+          <a href="#">Cloudhub + Anypoint Connectors</a>
+        </p>
+        <div class="slds-tile__detail">
+          <p class="slds-text-heading--medium">$500,000</p>
+          <p class="slds-truncate">
+            <a href="#">Company One</a>
+          </p>
+          <p class="slds-truncate">Closing 9/30/2015</p>
+        </div>
+      </div>
+    </li>
+    <li class="slds-list__item">
+      <div class="slds-tile slds-tile--board">
+        <p class="slds-tile__title slds-truncate">
+          <a href="#">Cloudhub</a>
+        </p>
+        <div class="slds-tile__detail">
+          <p class="slds-text-heading--medium">$185,000</p>
+          <p class="slds-truncate">
+            <a href="#">Company Two</a>
+          </p>
+          <p class="slds-truncate slds-has-alert">Closing 12/15/2015</p>
+          <span class="slds-icon_container slds-tile--board__icon">
+            <svg aria-hidden="true" class="slds-icon slds-icon-text-warning slds-icon--x-small">
+              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning"></use>
+            </svg>
+            <span class="slds-assistive-text">Warning Icon</span>
+          </span>
+        </div>
+      </div>
+    </li>
+    <li class="slds-list__item">
+      <div class="slds-tile slds-tile--board">
+        <p class="slds-tile__title slds-truncate">
+          <a href="#">600 Widgets</a>
+        </p>
+        <div class="slds-tile__detail">
+          <p class="slds-text-heading--medium">$35,000</p>
+          <p class="slds-truncate">
+            <a href="#">Company Three</a>
+          </p>
+          <p class="slds-truncate">Closing 10/12/2015</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+        
+    </body>
+</html>
+</apex:page>

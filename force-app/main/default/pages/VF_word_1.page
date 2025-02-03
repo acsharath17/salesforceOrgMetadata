@@ -1,0 +1,19 @@
+<apex:page standardController="Account"  contentType="application/msword#sfdcsrini.doc" cache="true">
+
+<html >
+
+<body>
+<apex:outputText title="Welcome to word" value="{!$User.FirstName}"/>
+<br/>
+<br/>
+<apex:pageBlock >
+<div style="text-align:left" >
+<b>Account Name :</b><apex:outputText value="{!account.name}"/><br/>
+<b>Account Number: </b><apex:outputText value="{!account.AccountNumber}"/><br/>
+</div>            
+</apex:pageBlock>
+</body>
+</html>
+
+
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page controller="MFILoginController">
+  <apex:form >
+     
+      <apex:inputText value="{!input}" id="theTextInput"/> <br/><br/>
+      <apex:inputText value="{!startURL}" id="theTextInput2"/>
+      
+      <apex:commandButton action="{!Login2}" value="Save" id="theButton"/>
+      
+  </apex:form>
+</apex:page>

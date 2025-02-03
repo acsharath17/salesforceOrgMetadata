@@ -1,0 +1,15 @@
+<apex:page controller="create_Account_and_Contact" >
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Next" action="{!go_next}"/>
+        </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account Name</apex:outputLabel>
+                    <apex:inputText value="{!a_name}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

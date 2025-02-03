@@ -1,0 +1,14 @@
+<apex:page id="page">
+    <apex:form id="form">
+        <apex:outputPanel id="panel">
+            <script>
+                function foo() {
+                    <!-- This selection is at SAME level as element -->
+                    var obj = document.getElementById('{!$Component.input}');
+                    obj.value = 'hello';
+                }
+            </script>
+            <apex:inputText id="input" onfocus="foo();" />
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

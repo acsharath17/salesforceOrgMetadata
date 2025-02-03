@@ -1,0 +1,35 @@
+<template>
+    <lightning-quick-action-panel header="Generate Acceptance Criteria" style="width: 100px;">
+        <template if:true={hideRequirement}>
+            <div class="slds-p-around_medium" id="modal-content-id-1">
+                <div class="slds-align_absolute-center">
+                    <lightning-button label="Submit" onclick={handleButtonClick} class="slds-align_absolute-center slds-m-top_medium"></lightning-button>
+                    <!--<lightning-button label="Submit" onclick={handleSubmit} class="slds-align_absolute-center slds-m-top_medium"></lightning-button>
+                    <lightning-button class="slds-align_absolute-center" variant="neutral" label="Cancel" onclick={closeModal}></lightning-button>-->
+                </div>
+                <lightning-textarea
+                    label="Requirement"
+                    value={userQuery}
+                    onchange={handleInputChange}>
+                </lightning-textarea>
+                <lightning-record-edit-form record-id={recordId} object-api-name={objectApiName} onsuccess={handleSuccess}>
+                    <template if:true={finalAnswer}>
+                        <lightning-input-field variant=" label-hidden" field-name="Acceptance_Criteria__c" value={finalAnswer}></lightning-input-field><br/>
+                        <lightning-button  variant="brand" class="slds-align_absolute-center" label="Save" type="submit"></lightning-button>
+                    </template>                
+                </lightning-record-edit-form>
+            </div>
+        </template>
+        
+        <template if:false={hideRequirement}>
+            <p>Success : Please close the window</p>
+        </template>
+               
+         <!-- modal start -->      
+         <template if:true={isShowModal}>
+            <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+        </template>
+        <!-- modal end --> 
+        
+    </lightning-quick-action-panel>
+</template>

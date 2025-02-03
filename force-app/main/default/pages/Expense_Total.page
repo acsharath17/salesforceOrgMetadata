@@ -1,0 +1,57 @@
+<apex:page standardController="Expense__c" recordSetVar="Expense">
+<script src="{!$Resource.Jquery}"></script>
+<script>
+(function($) {
+    $(document).ready(function() {
+        $('.quantityMarker').change(function() {
+
+            var defaultedFloat = function(s) {
+                if (s !== null && s !== '') {
+                    var r = parseFloat(s);
+                    if (!isNaN(r)) return r;
+                }
+                return 0;
+            };
+
+            // Recalculate the row
+            var q = $(this);
+            var r = q.closest('tr').find('.rateMarker');
+            var t = q.closest('tr').find('.totalMarker');
+            
+            // Better handling of rounding may be needed
+            t.text(defaultedFloat(q.val()) * defaultedFloat(r.text()));
+
+            // Recalculate total of all rows
+            var total = 0;
+            $('.totalMarker').each(function() {
+                var t = $(this);
+                total += defaultedFloat(t.text());
+            });
+            $('.grandTotalMarker').text(total);
+        });
+    });
+})(jQuery.noConflict());
+</script>
+
+    <apex:form >   
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!Expense}" var="ex">
+                <apex:column value="{!ex.name}"/>
+                <apex:column headerValue="Delivered Quantity" >
+                <apex:inputtext styleClass="quantityMarker"/>
+                </apex:column>
+                
+                <apex:column value="{!ex.Amount__c}" styleClass="rateMarker">                    
+                </apex:column>
+                
+                <apex:column headerValue="Total">
+    <apex:outputtext styleClass="totalMarker"/>
+    <apex:facet name="footer">
+        <apex:outputtext styleClass="grandTotalMarker"/>
+    </apex:facet>
+</apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

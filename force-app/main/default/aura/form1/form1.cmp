@@ -1,0 +1,60 @@
+<aura:component implements="force:appHostable">
+    <aura:attribute name="expenses" type="Expense__c[]"/>
+    <aura:attribute name="newExpense" type="Expense__c"
+                    default="{ 'sObjectType': 'Expense__c',
+                             		'Name': '',
+                             		'Amount__c' : 0,
+                             		'Client__c' : '',
+                             		'Date__c'	: '',
+                             		'Reimbursed__c' : false
+                             }"/>
+    <aura:attribute name="total" type="Double" default="0.00" />
+    <aura:attribute name="exp" type="Double" default="0" />
+    
+    <div class="container">
+    	<form class="slds-from--stacked">
+        	<div class="slds-form-element slds-is-required">
+            	<div class="slds-form-element__control">
+                	<ui:inputText aura:id="expname" label="Expense Name"
+                                  class="slds-input" 
+                                  labelClass="slds-form-element__label" 
+                                  value="{!v.newExpense.Name}" 
+                                  required="true" />
+                </div>
+            </div>
+            
+            <div class="slds-form-element slds-is-required">
+            	<div class="slds-from-element__control">
+                	<ui:inputNumber aura:id="amount" label="Amount"
+                                    class="slds-input" 
+                                    labelClass="slds-from-element__label" 
+                                    value="{!v.newExpense.Amount__c}"
+                                    required="true" />
+                </div>
+            </div>
+            
+            <div class="slds-form-element">
+           <div class="slds-form-element__control">
+             <ui:inputDateTime aura:id="expdate" label="Expense Date"
+                               class="slds-input"
+                               labelClass="slds-form-element__label"
+                               value="{!v.newExpense.Date__c}"
+                               displayDatePicker="true"/>
+            </div>
+          </div>
+          
+          <div class="slds-form-element">
+            <ui:inputCheckbox aura:id="reimbursed" label="Reimbursed?"
+                              class="slds-checkbox"
+                              labelClass="slds-form-element__label"
+                              value="{!v.newExpense.Reimbursed__c}"/>
+            <ui:button label="Submit" 
+                       class="slds-button slds-button--neutral"
+                       labelClass="label"
+                       press="{!c.createExpense}"/>
+           </div>  
+            
+        </form>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,29 @@
+<apex:page standardController="Opportunity" extensions="opp_search" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Stage</apex:outputLabel>
+                    <apex:selectList size="1" multiselect="false" value="{!sel_stage}">
+                        <apex:selectOptions value="{!Stage_name}"/> <apex:actionSupport event="onchange" reRender="t"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Type</apex:outputLabel>
+                    <apex:selectList size="1" multiselect="false" value="{!sel_type}">
+                        <apex:selectOptions value="{!Type_name}"/> <apex:actionSupport event="onchange" reRender="t"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockTable value="{!Opp_List}" var="o" id="t">
+                <apex:column value="{!o.name}"/>
+                <apex:column value="{!o.Amount}"/>
+                <apex:column value="{!o.StageName}"/>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

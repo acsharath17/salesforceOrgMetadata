@@ -1,0 +1,15 @@
+<aura:component controller="radioButtonController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:LightningQuickActionWithoutHeader,force:hasRecordId,forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="contacts" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:iteration items="{!v.contacts}" var="con">
+    	<ui:inputRadio text="{!con.name}" label="{!con.name}" name="Role" change="{!c.onGroup}"/>
+        <div class="slds-truncate" title="{!con.Name}">{!con.Name}</div>
+    </aura:iteration>
+    
+    <!--<ui:inputRadio text="Sample1" label="Sample 1" name="Role" change="{!c.onGroup}"/><br/>
+    <ui:inputRadio text="Sample2" label="Sample 2" name="Role" change="{!c.onGroup}"/><br/>
+    <ui:inputRadio text="Sample3" label="Sample 3" name="Role" change="{!c.onGroup}"/><br/>
+    <ui:inputRadio text="Sample4" label="Sample 4" name="Role" change="{!c.onGroup}"/><br/>
+    <ui:inputRadio text="Sample5" label="Sample 5" name="Role" change="{!c.onGroup}"/>-->	
+</aura:component>

@@ -1,0 +1,13 @@
+<apex:page standardController="Opportunity" extensions="page_1" >
+    <apex:form >        
+        <apex:commandButton value="Next" action="{!go}"/>
+        <apex:pageBlock >
+            <apex:inputTextarea value="{!abc}" /> <br/><br/>
+            <apex:outputField value="{!opp.name}"/><br/><br/>
+            <apex:outputField value="{!opp.StageName}"/>        
+        </apex:pageBlock>
+    </apex:form>
+    
+    
+    
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page standardController="Account" sidebar="false" extensions="go_to_next" >
+    <apex:sectionHeader subtitle="New Account" title="Account Edit" help="https://ap2.salesforce.com/setup/secur/RemoteAccessAuthorizationPage.apexp?source=CAAAAVKWwR4pME8wMTAwMDAwMDA0QzkzAAAAxr5-vflhb_fJXodf-qLD7EZVCS_o__65LCIBL-D6cQiLM0efCR3gst9yQNdi4Tc2kH7_9hAqFI9oEnqzdxOrv4obCkI281eyv2g30mJg1l75juDBv5mHh6yBror1Bo3CsLUKSMTmn2jUQrfeeGuJ9rE9VHGqpqRPUH9UKeqMaqNuYxmklC2Fo8DvlzFqaZwy5l7_XWW4S0TFWysaMn1GSfj3xgMzwW6iZobDb9plf0eEi6SfoRdAvLEML_Le7aeKrkPZuPjYjSat0ZG84byp4P9BeF_MnKLqV60sVmlxJYB6tK1wdryPhFxgD7RkIrACnqT6AXzCnB1fM7rJKPUy55Rq6OaBCE0nH07fJu-YVM_3lvbwGtdIO8a5Uf7Uo0JN3OyGvEvkP1sFLRcgvBtL5Na_LneaHHjIrG44PU-wqcEWlmj09oW2rFcdLOJvs3Gc-FmQ2EvtoDW-fTANDCOuIErY9AmAkY36CCANAZR8hQ2fy7mPwtzxvcJ3eAMRlBXDZuxmRi3bCzCzV4OPhW7eLh-m_U3vP_PX8HZN2Rc7yYlLHzXK5wDGI43tngKRag5zX5N_cCcl-cF2gu--VAjknbBJ_WFoKIOHXNAn44i_mg0K-cv-SkpMP3wZdrQTUGMby9R3_bs3aSa5MX63JonONrE41lsIQjzewF47o520mGVRzTdupOYbNz1QpYzDUrZ3TW3hM2rDfhS8LB2iqSjVjGkeCq8kNwQOSgPgJOz9d-9-yB097d0BIurPyJzjt07rxcrNlXQikGIn0oC8sCpdgu0VOBi2glilqPvYPXtSKL8xM7BfRMtsjoFTee7MUto9LKInUISmBM8rtYo-e720sVlwp7H9atBVOUib8rjc_TMgjEdZUaKy4WzuXo4axRD3J-jRfsPS9m8ZCdyC21BfmfHI_aQlHfF8wfN6ILVPlPLCAmAR6kaGxHaTWb6v8W4YGqqjS3HYiVejY2I9tvubvDXNBWGcljLM43s1Mmfo83yT6s1SdRaig9zhgh8ome-ZHWB9Kb3us7LDqqmpqcTxLdvLSovgXnex1OVjsaMqnrksA1vShaAPDNVhvAHm3luDqECTbB4mm7bI0BRUUvRzVwaFb17g7goaWrgcGs5KP51N&sdtd=1"/>
+    <apex:form >
+        <apex:pageBlock title="Account Edit" mode="Edit">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Go Next" action="{!next}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Account Information" columns="3" >
+                <apex:inputField value="{!Account.name}"/>
+                <apex:inputField value="{!Account.Type}" required="true"/>
+                <apex:inputField value="{!Account.Rating}"/>
+                <apex:inputField value="{!Account.Website}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,27 @@
+<apex:page standardController="Account" recordSetVar="account" renderAs="pdf"  >
+    
+    <apex:dataTable value="{!account}" var="acc" border="1px">
+        <apex:facet name="caption">List Account</apex:facet>
+        <apex:facet name="header">Sharat</apex:facet>
+        <apex:facet name="footer">Sharat</apex:facet>
+        
+        <apex:column >
+            <apex:facet name="header">Name</apex:facet>
+            <apex:facet name="footer">column footer</apex:facet>
+            <apex:outputText value="{!acc.name}"/>
+        </apex:column>
+        
+        <apex:column >
+            <apex:facet name="header">Phone</apex:facet>
+            <!--<apex:facet name="footer">column footer</apex:facet>-->
+            <apex:outputText value="{!acc.Phone}"/>
+        </apex:column>
+        
+        <apex:column >
+            <apex:facet name="header">Industry</apex:facet>
+            <apex:facet name="footer">column footer</apex:facet>
+            <apex:outputText value="{!acc.Industry}"/>
+        </apex:column>
+                
+    </apex:dataTable>
+</apex:page>

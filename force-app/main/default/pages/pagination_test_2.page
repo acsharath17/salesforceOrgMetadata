@@ -1,0 +1,27 @@
+<apex:page StandardController="Contact" extensions="ContactWithRadioController" showHeader="false">
+     <apex:form id="theForm">
+         <apex:pageBlock Title="ALL CONTACTS">
+                <apex:commandButton value="Save" action="{!savingContact}" id="SaveButton"/>
+                    <apex:pageBlockTable value="{!Contacts}" width="100%" var="c" cellpadding="2" border="1"  rowClasses="odd,even" styleClass="tableClass" id="opp_table">
+                         <apex:column headerValue="Primary">
+                           <input type="radio" name="selectRadio" id="radio">
+                                  <apex:actionSupport event="onclick" action="{!getSelected}" rerender="Selected_PBS">
+                                  <apex:param name="id" value="{!c.con.id}"/>
+                                  </apex:actionSupport>
+                           </input>
+                          </apex:column>
+                        <apex:column headerValue="All contact Name" >
+                           <apex:outputField value="{!c.con.Name}">       
+                               <apex:inlineEditSupport event="ondblClick"  showOnEdit="SaveButton" />
+                          </apex:outputField>
+                       </apex:column>
+                       <apex:column headerValue="Phone" >
+                             <apex:outputField value="{!c.con.MobilePhone}">       
+                                <apex:inlineEditSupport event="ondblClick"  showOnEdit="SaveButton" hideOnEdit="massdelete"/>
+                            </apex:outputField>
+                       </apex:column>
+                     </apex:pageBlockTable>
+                         </apex:pageBlock>
+             </apex:form>
+     
+ </apex:page>

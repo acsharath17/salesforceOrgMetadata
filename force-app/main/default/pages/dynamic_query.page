@@ -1,0 +1,7 @@
+<apex:page controller="dynamii_query" >
+    <apex:form >
+        <apex:commandButton value="Get Query" action="{!query_fields}"/>
+        <apex:inputText value="{!fields}"/><br/><br/>
+        <apex:outputText >{!qry}</apex:outputText>
+    </apex:form>
+</apex:page>

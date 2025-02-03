@@ -1,0 +1,26 @@
+<apex:page >
+  <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").on({
+            mouseenter : function(){
+                $(this).css("background-color","lightgray");
+            },
+            mouseleave : function(){
+                $(this).css("background-color","lightblue");
+            },
+            click : function(){
+                $(this).css("background-color","green");
+            }
+            
+        });
+    });
+</script>
+</head>
+<body>
+
+<p>Click or move the mouse pointer over this paragraph.</p>
+
+</body>
+</apex:page>

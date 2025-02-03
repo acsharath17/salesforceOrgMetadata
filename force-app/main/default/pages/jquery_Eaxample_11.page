@@ -1,0 +1,22 @@
+<apex:page >
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            
+                $("#p1").hover(function(){
+                    alert("You've Entered P1");
+                },
+                function(){
+                    alert("Your Leaving P1");
+                });
+            
+            });
+        </script>
+    </head>
+    
+    <body>
+        <p id="p1"> hello jQuery</p>
+    </body>
+    
+</apex:page>

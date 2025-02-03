@@ -1,0 +1,87 @@
+<apex:page controller="tiered_tables_controller" standardStylesheets="false"  >
+    
+    <apex:includeScript value="{!$Resource.jQuery}" />
+    <apex:includeScript value="{!$Resource.jExpand}" />
+    
+    <script>
+   var j$ = jQuery.noConflict();
+ 
+   j$(document).ready(function()
+   {
+      resetTable();
+   });
+ 
+   //Collapses the outer table and hides the inner table.
+   function resetTable()
+   {
+      j$("#originalDrilldowns tr.pleaseHideMe").hide();
+      j$("#originalDrilldowns tr:first-child").show();
+ 
+      j$("#originalDrilldowns tr.odd").click(function()
+      {
+         j$(this).next("tr").toggle();
+         j$(this).find(".arrow").toggleClass("up");
+      });
+   }
+</script>
+       
+    <apex:form >
+    
+    <apex:pageBlock >
+     <table id="originalDrilldowns">
+   <tr>
+      <th></th>
+      <th>Account</th>
+      <th>Industry</th>
+      <th>Phone</th>
+      <th>Revenue</th>
+      <th>Website</th>
+      <th>Type</th>
+   </tr>
+   <apex:repeat value="{!wrappers}" var="wrap">
+      <tr class="odd">
+         <td><apex:outputPanel layout="none"><div class="arrow"></div></apex:outputPanel></td>
+         <td><apex:outputField value="{!wrap.customerAcc.Name}" /></td>
+         <td><apex:outputField value="{!wrap.customerAcc.Industry}" /></td>
+         <td><apex:outputField value="{!wrap.customerAcc.Phone}" /></td>
+         <td><apex:outputField value="{!wrap.customerAcc.Revenue__c}" /></td>
+         <td><apex:outputField value="{!wrap.customerAcc.Website}" /></td>
+         <td><apex:outputField value="{!wrap.customerAcc.Type}" /></td>
+      </tr>
+      <apex:outputPanel layout="none">
+         <tr class="pleaseHideMe">
+            <td colspan="7">
+               <apex:pageBlockTable value="{!wrap.resources}" var="drilldown" rendered="{!wrap.resources.size > 0}" rowClasses="doNothing">
+                  <apex:column >
+                     <apex:facet name="header">Name</apex:facet>
+                     <apex:outputField value="{!drilldown.Name}" />
+                  </apex:column>
+                  <apex:column >
+                     <apex:facet name="header">Account</apex:facet>
+                     <apex:outputField value="{!drilldown.AccountId}" />
+                  </apex:column>
+               </apex:pageBlockTable>
+               <apex:pageBlockTable value="{!wrap.opps}" var="drilldown" rendered="{!wrap.resources.size > 0}" rowClasses="doNothing">
+                  <apex:column >
+                     <apex:facet name="header">Name</apex:facet>
+                     <apex:outputField value="{!drilldown.Name}" />
+                  </apex:column>
+                  <apex:column >
+                     <apex:facet name="header">Expected Revenue</apex:facet>
+                     <apex:outputField value="{!drilldown.ExpectedRevenue}" />
+                  </apex:column>
+                  <apex:column >
+                     <apex:facet name="header">CloseDate</apex:facet>
+                     <apex:outputField value="{!drilldown.CloseDate}" />
+                  </apex:column>
+               </apex:pageBlockTable>
+            </td>
+         </tr>
+      </apex:outputPanel>
+   </apex:repeat>
+</table> 
+    </apex:pageBlock> 
+    </apex:form>
+    
+       
+</apex:page>

@@ -1,0 +1,5 @@
+<aura:component >
+    <lightning:tile label="Lightning component team" href="/path/to/somewhere">
+        <p class="slds-truncate" title="7 Members">7 Members</p>
+    </lightning:tile>
+</aura:component>

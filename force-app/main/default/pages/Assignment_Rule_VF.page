@@ -1,0 +1,43 @@
+<apex:page controller="AssignmentRule_Controller" >
+    <apex:form >
+        <apex:pageBlock id="pb" >
+            <apex:variable value="{!1}" var="count"/>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Object</th>
+                    <th>Field</th>
+                    <th>Operator</th>
+                    <th>Value</th>
+                </tr>
+                
+                <apex:repeat value="{!wap}" var="wa">
+                    <tr>
+                        <td>{!FLOOR(count)} </td>
+                        <td width = "30px">
+                            
+                            <apex:selectList id="SelectedObject" value="{!wa.objectN}" size="1" required="false" >
+                            
+                                <apex:selectOptions value="{!Objects}"/>
+                                <apex:actionSupport event="onchange" reRender="pb" action="{!callfun}">
+                                    <apex:param Name="SelectedObject" assignTo="{!hh}" value="{!wa.objectN}"/>    
+                                </apex:actionSupport>
+                            </apex:selectList>
+                        </td>
+                        <td>
+                            <apex:selectList id="SelectedField" value="{!wa.FieldN}" size="1" required="false" >
+                                <apex:selectOptions value="{!wa.Fields}" />
+                            </apex:selectList>    
+                        </td>
+                        <td><apex:inputText /></td>
+                        <td><apex:inputText /></td>
+                        <apex:variable var="count" value="{!count+ 1}"/>
+                    </tr>
+                </apex:repeat>                              
+            </table>
+            
+            <apex:commandButton value="add" action="{!tabb}" reRender="pb"/>
+                
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

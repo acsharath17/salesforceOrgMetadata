@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Data Processing">
+        <div class="slds-p-around_medium">
+            <template if:true={error}>
+                <div class="slds-text-color_error">{error}</div>
+            </template>
+            <template if:false={processing}>
+                <lightning-button label="Start Processing" onclick={handleStart}></lightning-button>
+            </template>
+            <template if:true={processing}>
+                <lightning-progress-bar value={progressValue}></lightning-progress-bar>
+                <p>{progressMessage}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

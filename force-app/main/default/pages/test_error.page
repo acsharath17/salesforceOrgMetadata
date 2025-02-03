@@ -1,0 +1,21 @@
+<apex:page standardController="Account" extensions="ErrorMessageInVfController1">
+ <apex:form >
+   <apex:pageblock >
+       <apex:pageMessage summary="This pageMessage will always display. Validation error 
+           messages appear in the pageMessages component." severity="warning" strength="3" />
+        <apex:pageMessages />
+      <!--apex:pageMessages id="showmsg"></apex:pageMessages>
+         <apex:panelGrid columns="2"-->
+         <apex:pageblockSection >
+           Account Name: <apex:inputText value="{!acc_name}"/>
+           Account Number: <apex:inputText value="{!acc_number}"/>
+           Account Phone: <apex:inputText value="{!acc_phone}"/>
+           Account Site: <apex:inputText value="{!acc_site}"/>
+           Account Industry: <apex:inputText value="{!acc_industry}"/>
+           <!--apex:commandButton value="Update" action="{!save}" style="width:90px" rerender="showmsg"/>-->
+           <apex:commandButton value="Update" action="{!save}"/>
+           </apex:pageblockSection>
+         <!--/apex:panelGrid>-->
+    </apex:pageblock>
+ </apex:form>
+</apex:page>

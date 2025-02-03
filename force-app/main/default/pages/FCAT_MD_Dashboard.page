@@ -1,0 +1,4 @@
+<apex:page >
+    <apex:canvasApp applicationName="FCAT"         
+        height="1050px" width="100%"/>
+</apex:page>

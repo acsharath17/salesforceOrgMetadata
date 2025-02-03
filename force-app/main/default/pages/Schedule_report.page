@@ -1,0 +1,137 @@
+<apex:page standardController="Schedule_Report__c" extensions="Report_Search_and_add" tabStyle="Report" >
+<apex:pageMessages ></apex:pageMessages>
+<apex:sectionHeader title="Report" subtitle="Report Scheduling"/>
+
+ <style>
+        .search{
+            font-size:14pt;
+            margin-right: 20px;    
+        }
+        .fyi{
+            color:red;
+            font-style:italic;
+        }
+        .label{
+            margin-right:10px;
+            font-weight:bold;
+        }
+    </style>
+    
+    <script type='text/javascript'>
+    
+        // This script assists the search bar functionality
+        // It will execute a search only after the user has stopped typing for more than 1 second
+        // To raise the time between when the user stops typing and the search, edit the following variable:
+        
+        var waitTime = 1;
+        
+    
+        var countDown = waitTime+1;
+        var started = false;
+        
+        function resetTimer(){
+        
+            countDown=waitTime+1;
+            
+            if(started==false){
+                started=true;
+                runCountDown();
+            }
+        }
+        
+        function runCountDown(){
+        
+            countDown--;
+            
+            if(countDown<=0){
+                fetchResults();
+                started=false;
+            }
+            else{
+                window.setTimeout(runCountDown,1000);
+            }
+        }
+    
+    </script>
+    
+    <apex:form >
+        <apex:outputPanel id="mainbody">
+            <apex:pageBlock title="Selected Reports" id="selected">
+                
+                <apex:pageBlockSection >
+                    <apex:inputField value="{!Schedule_Report__c.Start_Date__c}"/>
+                    <apex:inputField value="{!Schedule_Report__c.End_Date__c}"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockTable value="{!Selected_Reports}" var="s">
+                    
+                    <apex:column >
+                        <apex:commandLink value="Remove" action="{!remove_selected}" reRender="selected,searchResults" immediate="true">
+                            <apex:param value="{!s.Report_Id__c}" assignTo="{!toUnselect}" name="toUnselect"/>
+                        </apex:commandLink>
+                    </apex:column>
+                    
+                    <apex:column headerValue="Report Name" value="{!s.Report_Name__c}"/>
+                    
+                    <apex:column headerValue="Report Name" value="{!s.Report_Folder__c}"/>
+                    
+                </apex:pageBlockTable>
+                
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!go_next}" value="Next"/>
+                    <apex:commandButton action="{!onCancel}" value="Cancel" immediate="true"/>
+                </apex:pageBlockButtons>
+                
+            </apex:pageBlock>
+            
+            <apex:pageBlock >
+                <!--<apex:outputPanel styleClass="search">
+                    Search for Reports :
+                </apex:outputPanel>
+                
+                <apex:actionRegion renderRegionOnly="true" immediate="true">
+                    <apex:actionFunction name="fetchResults" action="{!update_available_report}" reRender="searchResults" status="searchStatus"/>
+                    
+                    <apex:inputText value="{!searchString}" onkeydown="if(event.keyCode==13){this.blur();}else{resetTimer();}" style="width:300px"/>
+                    &nbsp;&nbsp;
+                </apex:actionRegion>-->
+                
+                <apex:outputPanel styleClass="search">Report Folder</apex:outputPanel>&nbsp;&nbsp;
+                    <apex:selectList value="{!selected_folder_name}" size="1">
+                            <apex:selectOptions value="{!Folder_name}"/>
+                            <apex:actionSupport event="onchange" reRender="searchResults" status="searchStatus" action="{!update_available_report}"/>
+                    </apex:selectList>
+                    &nbsp;&nbsp;
+                    
+                    <i>
+                  
+                    <apex:actionStatus id="searchStatus" startText="Please Wait..." stopText=" "/>
+                </i>
+                
+                <br/>
+                <br/>
+                
+                <apex:outputPanel id="searchResults">
+                    <apex:pageBlockTable value="{!Available_Reports}" var="a">
+                        <apex:column >
+                            <apex:inputCheckbox >
+                                <apex:actionSupport action="{!add_to_selected}" event="onclick" reRender="selected,searchResults" immediate="true">
+                                    <apex:param value="{!a.Id}" assignTo="{!toSelect}" name="toSelect"/>
+                                </apex:actionSupport>
+                            </apex:inputCheckbox>
+                        </apex:column>
+                        
+                        <apex:column headerValue="Report Name" value="{!a.Name}" />
+                        
+                        <apex:column headerValue="Report Folder" value="{!a.FolderName}" />
+                        
+                    </apex:pageBlockTable>
+                </apex:outputPanel>
+                    
+            </apex:pageBlock>
+            
+        </apex:outputPanel>
+    
+    </apex:form>
+    
+</apex:page>

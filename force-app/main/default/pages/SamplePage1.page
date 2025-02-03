@@ -1,0 +1,8 @@
+<apex:page controller="SampleClass1" >
+<apex:outputlink value="/apex/SamplePage2"> Click Here <apex:param name="msg" value="success"/> </apex:outputlink>
+<apex:form id="frm">
+    <apex:commandButton value="Go Next" action="{!gotonewpage}" reRender="frm1">
+        <apex:param name="msg" value="success" assignTo="{!msg1}"/>
+    </apex:commandButton>
+</apex:form>
+</apex:page>

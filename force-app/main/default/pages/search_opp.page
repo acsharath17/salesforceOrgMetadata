@@ -1,0 +1,45 @@
+<apex:page controller="search_opp" sidebar="false" tabStyle="Opportunity" >
+    <apex:sectionHeader title="Opportunity Search" subtitle="Opportunities"/>
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Show Selected Opp" action="{!sel_opp}"/>
+        </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Stage</apex:outputLabel>
+                    <apex:selectList size="1" multiselect="false" value="{!Opp_stage}">
+                        <apex:selectOptions value="{!Stage_name}"/> <apex:actionSupport event="onchange" reRender="t"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Type</apex:outputLabel>
+                    <apex:selectList size="1" multiselect="false" value="{!Opp_type}">
+                        <apex:selectOptions value="{!Type_name}"/> <apex:actionSupport event="onchange" reRender="t"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockTable value="{!Opp_result}" var="p" id="t">
+                <apex:column >
+                    <apex:inputCheckbox value="{!p.selected}"/>
+                </apex:column>
+                <apex:column value="{!p.opty.name}"/>
+                <apex:column value="{!p.opty.Amount}"/>
+                <apex:column value="{!p.opty.type}"/>
+                <apex:column value="{!p.opty.StageName}"/>
+                <apex:column value="{!p.opty.CloseDate}"/>
+            </apex:pageBlockTable>
+            
+            <apex:pageBlockTable value="{!sel}" var="s">
+                <apex:column value="{!s.name}"/>
+                <apex:column value="{!s.Amount}"/>
+                <apex:column value="{!s.Type}"/>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

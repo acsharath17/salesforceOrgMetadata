@@ -1,0 +1,6 @@
+<apex:page standardController="Account" Extensions="Searhproduct,xyz" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: extension_Example
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

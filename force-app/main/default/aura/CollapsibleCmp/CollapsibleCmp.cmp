@@ -1,0 +1,19 @@
+<aura:component >
+	<aura:attribute name="items" type="Object[]" default="[]" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <lightning:layout multipleRows="true">
+        <aura:iteration items="{!v.items}" var="item" indexVar="itemIndex">
+            <lightning:layoutItem size="12">
+                <h1>
+                    <lightning:buttonIcon value="{!itemIndex}" onclick="{!c.toggle}" iconName="{!item.expanded?'utility:chevrondown':'utility:chevronright'}" />
+                    {!item.title}
+                </h1>
+                <aura:if isTrue="{!item.expanded}">
+                    <div>
+                        Extra content would be shown here.
+                    </div>
+                </aura:if>
+            </lightning:layoutItem>
+        </aura:iteration>
+    </lightning:layout>	
+</aura:component>

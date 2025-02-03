@@ -1,0 +1,15 @@
+<apex:page controller="Shiva_Example_1" >
+    <apex:form >
+    
+        <apex:pageBlock >
+            
+            <apex:pageBlockTable value="{!opp}" var="pp"> <!-- Since Opp is a List initialized in contructor data will be populated as soon as page is loaded -->
+                <apex:column value="{!pp.name}"/>
+                <apex:column value="{!pp.StageName}"/>
+                <apex:column value="{!pp.Amount}"/>
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

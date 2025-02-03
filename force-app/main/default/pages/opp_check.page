@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity" Extensions="Opp_Check" >
+    <apex:form >
+        {!Greeting}
+        <apex:commandButton value="save" action="{!save_opp}"/>
+    </apex:form>
+</apex:page>

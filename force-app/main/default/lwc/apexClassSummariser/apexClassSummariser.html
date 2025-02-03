@@ -1,0 +1,15 @@
+<template>
+  <lightning-card title="Example Component" icon-name="standard:account">
+    <lightning-combobox
+      name="apexClassOptions"
+      label="Select an Apex Class"
+      placeholder="Select Apex Class"
+      options={apexClassOptions}
+      value={selectedApexClass}
+      onchange={handleChange}>
+      </lightning-combobox>
+  </lightning-card>
+  <div class="scrollable-text">
+    <textarea class="text-area" readonly>{largeText}</textarea>
+  </div>
+</template>

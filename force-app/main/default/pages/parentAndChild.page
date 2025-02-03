@@ -1,0 +1,24 @@
+<apex:page controller="parentAndChildController" >
+    
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+        
+            <apex:pageBlockTable value="{!accountAndContacts}" var="AC">
+                <apex:column value="{!AC.Name}"/>
+                
+                <apex:column breakBefore="true" colspan="2">
+                    <apex:pageBlockSection title="Contatcs" showHeader="true" collapsible="true">
+                        <apex:pageBlockTable value="{!AC.Contacts}" var="c">
+                            <apex:column value="{!c.Name}"/>
+                            <apex:column value="{!c.Email}"/>
+                            <apex:column value="{!c.MobilePhone}"/>
+                        </apex:pageBlockTable>
+                    </apex:pageBlockSection>
+                    
+                </apex:column>
+                    
+            </apex:pageBlockTable>
+        
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

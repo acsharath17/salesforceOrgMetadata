@@ -1,0 +1,29 @@
+<apex:page >
+
+  <apex:pageMessages />
+
+  <apex:panelBar >
+
+    <apex:panelBarItem label="Item One" 
+
+          onenter="alert('Entering item one');" 
+
+          onleave="alert('Leaving item one');">
+
+      Item one content
+
+    </apex:panelBarItem>
+
+    <apex:panelBarItem label="Item Two" 
+
+          onenter="alert('Entering item two');" 
+
+          onleave="alert('Leaving item two');">
+
+      Item two content
+
+    </apex:panelBarItem>
+
+  </apex:panelBar>
+
+</apex:page>

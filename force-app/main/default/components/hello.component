@@ -1,0 +1,24 @@
+<apex:component controller="Component_controller" >
+    <apex:pageBlock >
+        <!--<apex:pageBlockSection >
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Last Name</apex:outputLabel>
+                <apex:inputText />
+            </apex:pageBlockSectionItem>
+            
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Last Name</apex:outputLabel>
+                <apex:inputText />
+            </apex:pageBlockSectionItem>
+            
+        </apex:pageBlockSection>-->
+        <br/><br/>
+        
+        <apex:pageBlockTable value="{!con}" var="c"> 
+            <apex:column value="{!c.name}"/>
+            <apex:column value="{!c.email}"/>
+        </apex:pageBlockTable>
+        
+    </apex:pageBlock>
+</apex:component>

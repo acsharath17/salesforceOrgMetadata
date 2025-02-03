@@ -1,0 +1,70 @@
+<template>
+    <lightning-card>
+        <div class="divcenter">SalesforceCodex Field's Access Explorer</div>
+      
+        <lightning-layout multiple-rows>
+                    <lightning-layout-item size="2" padding="around-small">
+                           <lightning-combobox name="objectName" 
+                            label="Object"
+                            value="" 
+                            placeholder="Select Object" 
+                            options={objects} 
+                            onchange={handleObjectChange}
+                            required></lightning-combobox>
+                    </lightning-layout-item>
+                    <lightning-layout-item size="2" padding="around-small">
+                            <lightning-combobox
+                            name="Fields"
+                            label="Fields"
+                            value=""
+                            placeholder="Select Field"
+                            options={fields}
+                            onchange={handleFieldChange}
+                            required
+                    ></lightning-combobox>
+                    </lightning-layout-item>
+                    <lightning-layout-item>
+                        <lightning-button
+                        variant="brand" 
+                        label="Brand" 
+                        title="Primary action" 
+                        onclick={savePermissionChange} 
+                        class="slds-m-left_x-small"
+                        ></lightning-button>
+                    </lightning-layout-item>
+        </lightning-layout>
+        <br/>
+        <div>
+            <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                <thead>
+                    <tr>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="PermissionSet Name">PermissionSet Name</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Read">Read</div>
+                        </th>
+                        <th class="" scope="col">
+                            <div class="slds-truncate" title="Write">Write</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={permissions} for:item="perm">
+                        <tr key={perm.permissionSetId}>
+                            <td class="" scope="col">
+                                <div class="slds-truncate">{perm.permissionSetName}</div>
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate"><input type="checkbox" data-id={perm.permissionSetId} checked={perm.readPermission} onchange={onReadPermChange}></input> </div>
+                            </td>
+                            <td class="" scope="col">
+                                <div class="slds-truncate"><input type="checkbox" data-id={perm.permissionSetId} checked={perm.writePermission} onchange={onWritePermChange}></input> </div>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        </lightning-card>
+</template>

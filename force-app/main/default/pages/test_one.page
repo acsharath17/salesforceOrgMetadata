@@ -1,0 +1,10 @@
+<apex:page controller="Test_One" extensions="test_extension,test_extension2" action="{!acc2}" >
+    <apex:form >
+    <!--<apex:commandButton value="Get Account" action="{!acc2}"/>-->
+    <apex:pageBlock >
+    <apex:pageBlockTable value="{!acc}" var="aa">
+        <apex:column value="{!aa.name}"/>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,5 @@
+<apex:page standardController="Contact" renderAs="pdf" >
+    <apex:form >
+        <c:hello ></c:hello>
+    </apex:form>
+</apex:page>

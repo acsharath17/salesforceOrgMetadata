@@ -1,0 +1,19 @@
+<apex:page controller="Pagination_1" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!all_con}" var="ac">
+                <apex:column >
+                    <apex:outputField value="{!ac.name}"/>
+                </apex:column>
+            </apex:pageBlockTable>
+        
+        
+        <apex:pageBlockButtons >
+            <apex:commandButton value="First" action="{!First}"/>
+            <apex:commandButton value="Previous" action="{!previous}" rendered="{!hasPrevious}" />
+            <apex:commandButton value="Next" action="{!Next}" rendered="{!hasNext}"/>
+            <apex:commandButton value="Last" action="{!Last}"/>
+        </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,26 @@
+<apex:page controller="display_opp" >
+    <apex:form >
+        <apex:pageBlock title="Data Coming from Void Method ">
+       
+        <apex:commandButton value="get Data" action="{!all}"/>
+            <apex:pageBlockTable value="{!opp}" var="pp">
+                <apex:column >
+                <apex:inputCheckbox />
+                </apex:column>
+                <apex:column value="{!pp.name}"/>
+                <apex:column value="{!pp.stagename}"/>
+            </apex:pageBlockTable>
+        
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Data Coming from Get Method " >
+        
+            <apex:pageBlockTable value="{!all_opp}" var="pp">
+                <apex:column value="{!pp.name}"/>
+                <apex:column value="{!pp.stagename}"/>
+            </apex:pageBlockTable>
+        
+        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

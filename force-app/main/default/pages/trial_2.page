@@ -1,0 +1,62 @@
+<apex:page standardController="Opportunity" extensions="test_1234" >
+    
+    <apex:detail subject="{!opportunity.id}" relatedList="true"/>
+    {!$User.LastName}
+    <apex:image value="{!$Resource.SFDC}" width="500" height="300"/><br/><br/>
+    
+    <apex:image value="{!$Resource.Test_Img}" width="500" height="300"/>
+    
+    <!--<apex:inputFile value="{!ab}"></apex:inputFile>
+    
+    <apex:form >
+        Input Secret : <apex:inputSecret /><br/><br/>
+        Input Text : <apex:inputText /><br/><br/>
+        Input Textarea : <apex:inputTextarea />
+    </apex:form>
+    
+    <apex:listViews type="Account"/> -->  
+    
+    <br/><br/><br/><br/>
+    
+    <apex:tabPanel >
+        <apex:tab label="Account">
+            <p>This is Account</p>
+            
+            
+        </apex:tab>
+        
+        <apex:tab label="Contact">
+            <p>This is Contact</p>
+        </apex:tab>
+        
+        <apex:tab label="Any Custom">
+        
+        </apex:tab>
+        
+    </apex:tabPanel>
+    
+    <br/><br/><br/>
+    
+    
+    
+    <!-- InlineEditSupport
+    
+    <apex:form >
+        <apex:pageBlock mode="inlineEdit">
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!edit}" id="editButton" value="Edit"/>
+                <apex:commandButton action="{!save}" id="saveButton" value="Save"/>
+                <apex:commandButton onclick="resetInlineEdit()" id="cancelButton" value="Cancel"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                
+                <apex:inlineEditSupport showOnEdit="saveButton, cancelButton" hideOnEdit="editButton" event="ondblclick" changedStyleClass="myBoldClass" resetFunction="resetInlineEdit"/>
+                <apex:outputField value="{!Opportunity.name}"/>                
+                <apex:outputField value="{!Opportunity.accountId}"/>
+                <apex:outputField value="{!Opportunity.Amount}"/>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>-->
+    
+</apex:page>

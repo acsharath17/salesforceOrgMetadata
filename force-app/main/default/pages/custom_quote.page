@@ -1,0 +1,7 @@
+<apex:page standardController="Account" extensions="custom1">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!con}" var="c">
+            <apex:column value="{!c.name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

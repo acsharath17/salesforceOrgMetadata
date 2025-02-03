@@ -1,0 +1,20 @@
+<apex:page controller="test_ch">
+ <script type="text/javascript">
+       
+        function b() {         
+           //var apexInput = document.getElementById('j_id0:j_id2:someId').value;
+           var apexInput1=document.getElementById("{!$Component.f.someid}").value;
+           alert(apexInput1);
+          
+           var htmlInput = document.getElementById('htmlSomeId').value;
+           alert(htmlInput);
+        }
+    </script> 
+   
+    <apex:form id="f">
+        <apex:inputText value="{!str}" id="someId"/>
+        <input value="asdfg" id="htmlSomeId"/>
+       
+        <apex:commandbutton value="Apex Button" onclick="b()"/>
+    </apex:form>
+</apex:page>

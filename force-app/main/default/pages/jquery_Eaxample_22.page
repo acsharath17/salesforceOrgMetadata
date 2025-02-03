@@ -1,0 +1,23 @@
+<apex:page >
+    <!-- jQuery call back next eaxmple 23 will be same but without using call back -->
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").hide("slow",function(){
+                        alert("this is jQuery callback function")
+                    });
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+
+<button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+
+</body>
+</apex:page>

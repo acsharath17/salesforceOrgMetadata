@@ -1,0 +1,4 @@
+<apex:page standardController="Account" recordSetVar="acc" standardStylesheets="false" showHeader="false" >
+    <apex:pageBlock >
+    </apex:pageBlock>
+</apex:page>

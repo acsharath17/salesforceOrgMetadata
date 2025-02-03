@@ -1,0 +1,27 @@
+<apex:page controller="dataListCon">
+    <!--<apex:dataList value="{!accounts}" var="account">
+        <apex:outputText value="{!account.Name}"/>
+    </apex:dataList>
+    
+     IN HTML
+    
+    <ul id="thePage:theList">
+        <li id="thePage:theList:0">Bass Manufacturing</li>
+        <li id="thePage:theList:1">Ball Corp</li>
+        <li id="thePage:theList:2">Wessler Co.</li>
+    </ul>
+    
+    <ol>
+        <apex:repeat value="{!accounts}" var="acc">
+            <li>{!acc.name}</li>
+        </apex:repeat>
+    </ol>-->
+    <apex:form >
+    <apex:pageBlock >
+    
+    <apex:iframe src="https://c.ap2.visual.force.com/apex/VF_Datatable" scrolling="true" />
+    </apex:pageBlock>
+    </apex:form>
+
+    
+</apex:page>

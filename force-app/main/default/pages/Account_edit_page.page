@@ -1,0 +1,30 @@
+<apex:page standardController="Account">
+    
+    <apex:sectionHeader subtitle="New Account" title="Account Edit" help="https://ap2.salesforce.com/setup/secur/RemoteAccessAuthorizationPage.apexp?source=CAAAAVLjfeTkME8wMTAwMDAwMDA0QzkzAAAAyJSm2AMdJkw3QghqYKeYCFKXTI2ii3JTbl8fiQpaMjAnfHoV1GUSdZpUCE-YnmGaTkFPuJDwW_2GI9woc8faORR7KXbg7c6KD29aUrUczgqmVjp7X18XwFpHVnCvWdtA2HzF-4UCkHRQ9x8dKnQuAumTJ5Fdhv2OfITiDdpQaMw_n4ss-G4SJbKpcUyA3SkPTcxJi9NTR9kfBm5kEJmOBh_aY8myL89y3ymbSPToWxw_MI92kvlc3C-fdTsVLxiAtNLzsHOnla4Ia-Oxgq7sC_TKZ891KpTB5x9l3lO95HN9BIl4DpyFUsQFkKqDyUuR0h_7EPqKrKC9bVzb5EeyOwsULBpsyngfddbMUMj-pnUJxL6KiUBi84zQMQMjZfUysUYFFvqgPGockO362hbRMcKMnGiGhczqb50D1B4RrHbW4LAcVR923WrxV3nR9wAIxm4HSqA8y4Hyv3CSKxZM5EiiFO1TSEg0Ex7Of4J2MJkwW3pQHEZRPfEwzrOHF2IEcASj9akzMnqPJ5XDgajSbqfdST5TzVWUP555KNHgOF4xwDoC67z8otrC2CMnn99WEOqLlq10G4wmWXu7na-4_v0RVCvVXVHD2kOCQSNn0nvMx9kjwkfHmGBf_pAiPVvHRwnFP-N_QeOVpHCm7KKWMoFw1q7daucJpsOynX1GvFXalQeBXjmdTpzQWFDU0Eyev3wDe07iDqx2ELSe0QIgakL810gsxcFyOkMPQAGtMqzvji6P1Q2GXAOXJPxB8KIrl7rmy_D2mt4tYfzvlbPPx405z3VTV7PoBsDdI2Qx4zpUCCnWljjnoCa7HqPhZf4sSygMPwJZbp16tS3aBHDTm5BlrV97OlnC6h83ON_WY_Pem-sJ5WFUkrFeIxWfkLkqkZJ-hAzX6OZ5ypAQbpISWEOaHPI1WAVLoG6_LEB-cBdhlY_2POdQ8d5eKo4pPX9X0zq-zprLry0Kp-QNubur0uVkuEhjOBQWnS1ZjC74A7ZdDsikQDkCZ6YJkXcFMvgde6z0s8jvxfYa9ygWyAjl31XFlE3r-J0GSvIUIYRZv9MJGO61H_zAnMvuhcEMEQMnSU8TcUgWNroXXNbq5UZ1rZO_fAdkarvFK3H_5_gDcQ2P&sdtd=1"/>
+    
+    <apex:form >
+        <apex:pageBlock title="Account Edit" mode="edit">
+            
+            <apex:pageblockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageblockButtons>
+            
+            <apex:pageBlockSection title="Account Information" collapsible="false" >
+                   <apex:pageBlockSectionItem >
+                       <apex:outputLabel >Company Name</apex:outputLabel>
+                       <apex:inputField value="{!Account.name}"/>
+                   </apex:pageBlockSectionItem>
+                   
+                   <apex:inputField value="{!Account.Phone}"/>
+                   
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Section 2" collapsible="false">
+                <apex:inputField value="{!Account.Type}"/>
+                <apex:inputField value="{!Account.Website}"/>
+            </apex:pageBlockSection>
+            
+            
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

@@ -1,0 +1,16 @@
+<apex:page standardController="Contact" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputlabel value="First Name"/>
+                <apex:outputpanel >
+                <apex:inputfield value="{!Contact.Salutation}" />
+                &nbsp;
+                <apex:inputfield value="{!Contact.FirstName}" />
+                </apex:outputpanel>
+            </apex:pageBlockSectionItem>    
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page controller="Assign2_Account_ext" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Accounnt name</apex:outputLabel>
+                    <apex:inputText value="{!AccountName}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                <apex:commandButton value="Next" action="{!save_account_record}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

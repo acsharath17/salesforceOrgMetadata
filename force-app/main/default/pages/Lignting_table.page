@@ -1,0 +1,225 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0" >
+
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<head>
+  <title>Salesforce Lightning Design System Trailhead Module</title>
+  <apex:stylesheet value="{!URLFOR($Resource.SLDS110, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+</head>
+
+
+<apex:remoteObjects >
+  <apex:remoteObjectModel name="Account" fields="Id,Name,LastModifiedDate"/>
+</apex:remoteObjects>  
+
+<body class="slds">
+    <p class="slds-text-heading--label slds-m-bottom--small">
+      Salesforce Lightning Design System Trailhead Module
+    </p>
+    
+
+
+
+<!-- PAGE HEADER -->
+<div class="slds-page-header" role="banner">
+
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid">
+
+    <!-- GRID COL -->
+    <div class="slds-col">
+
+      <!-- HEADING AREA -->
+      <p class="slds-text-heading--label">Accounts</p>
+      <h1 class="slds-text-heading--medium">My Accounts</h1>
+      <!-- /HEADING AREA -->
+
+    </div>
+
+    <!-- GRID COL -->
+    <div class="slds-col slds-no-flex slds-align-middle">
+
+      <div class="slds-button-group" role="group">
+        <button class="slds-button slds-button--neutral">
+          New Account
+        </button>
+        <button class="slds-button slds-button--neutral">
+          More
+        </button>
+      </div>
+
+    </div>
+    <!-- / GRID COL -->
+
+  </div>
+  <!-- / LAYOUT GRID -->
+
+  <p class="slds-text-body--small slds-m-top--x-small">COUNT items</p>
+
+</div>
+<!-- / PAGE HEADER -->
+
+<!-- PRIMARY CONTENT WRAPPER -->
+<div class="myapp">
+
+
+  <!-- CREATE NEW ACCOUNT -->
+  <div aria-labelledby="newaccountform">
+
+    <!-- BOXED AREA -->
+    <fieldset class="slds-box slds-theme--default slds-container--small">
+
+      <legend id="newaccountform" class="slds-text-heading--medium slds-p-vertical--medium">Add a new account</legend>
+
+      <!-- CREATE NEW ACCOUNT FORM -->
+      <form class="slds-form--stacked">
+
+        <div class="slds-form-element">
+          <label class="slds-form-element__label" for="accountName">Name</label>
+          <div class="slds-form-element__control">
+            <input id="accountName" class="slds-input" type="text" placeholder="New account"/>
+          </div>
+        </div>
+        
+        <div class="slds-lookup" data-select="multi" data-scope="single" data-typeahead="true">
+    <div class="slds-form-element">
+      <label class="slds-form-element__label" for="lookup">Accounts</label>
+      <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--right">
+        <svg aria-hidden="true" class="slds-input__icon slds-icon-text-default">
+          <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+        </svg>
+        <input id="lookup" class="slds-input" type="text" aria-autocomplete="list" role="combobox" aria-expanded="true" aria-activedescendant="" />
+      </div>
+    </div>
+    <div class="slds-lookup__menu" role="listbox">
+      <div class="slds-lookup__item">
+        <button class="slds-button">
+          <svg aria-hidden="true" class="slds-icon slds-icon-text-default slds-icon--small">
+            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#search"></use>
+          </svg>&quot;ac&quot; in Accounts</button>
+      </div>
+      <ul class="slds-lookup__list" role="presentation">
+        <li class="slds-lookup__item">
+          <a id="s01" href="#" role="option">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-account slds-icon--small">
+              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+            </svg>Paddy&#x27;s Pub</a>
+        </li>
+        <li class="slds-lookup__item">
+          <a id="s02" href="#" role="option">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-account slds-icon--small">
+              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+            </svg>Tyrell Corporation</a>
+        </li>
+        <li class="slds-lookup__item">
+          <a id="s03" href="#" role="option">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-account slds-icon--small">
+              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+            </svg>Paper St. Soap Company</a>
+        </li>
+        <li class="slds-lookup__item">
+          <a id="s04" href="#" role="option">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-account slds-icon--small">
+              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+            </svg>Nakatomi Investments</a>
+        </li>
+        <li class="slds-lookup__item">
+          <a id="s05" href="#" role="option">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-account slds-icon--small">
+              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+            </svg>Acme Landscaping</a>
+        </li>
+        <li class="slds-lookup__item">
+          <a id="s06" href="#" role="option">
+            <svg aria-hidden="true" class="slds-icon slds-icon-standard-account slds-icon--small">
+              <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+            </svg>ACME Construction</a>
+        </li>
+      </ul>
+      <div class="slds-lookup__item">
+        <button class="slds-button">
+          <svg aria-hidden="true" class="slds-icon slds-icon-text-default slds-icon--small">
+            <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+          </svg>Add Account</button>
+      </div>
+    </div>
+  </div>
+        
+        <button class="slds-button slds-button--brand slds-m-top--medium" type="button" onClick="createAccount()">Create Account</button>
+      </form>
+      <!-- CREATE NEW ACCOUNT FORM -->
+
+    </fieldset>
+    <!-- / BOXED AREA -->
+
+  </div>
+  <!-- / CREATE NEW ACCOUNT -->
+
+  <!-- ACCOUNT LIST TABLE -->
+  <div id="accountList" class="slds-p-vertical--medium"></div>
+  <!-- / ACCOUNT LIST TABLE -->
+
+</div>
+<!-- / PRIMARY CONTENT WRAPPER -->
+
+<!-- FOOTER -->
+<footer role="contentinfo" class="slds-p-around--large">
+  <!-- LAYOUT GRID -->
+  <div class="slds-grid slds-grid--align-spread">
+    <p class="slds-col">Salesforce Lightning Design System Example</p>
+    <p class="slds-col">&copy; Your Name Here</p>
+  </div>
+  <!-- / LAYOUT GRID -->
+</footer>
+<!-- / FOOTER -->
+
+</body>
+<!-- JAVASCRIPT -->
+<script>
+  var account = new SObjectModel.Account();
+  var outputDiv = document.getElementById("accountList");    
+
+  function updateOutputDiv() {    
+
+    account.retrieve(
+      {orderby: [{LastModifiedDate: 'DESC'}], limit: 10},
+      function(error, records) {
+        if (error) {
+          alert(error.message);
+        } else {
+          var html = '<div class="slds-scrollable--x"><table class="slds-table slds-table--bordered">';    
+
+          html += '<thead><tr><th scope="col">Account name</th>';
+          html += '<th scope="col">Account ID</th></tr></thead><tbody>';    
+
+          records.forEach(function(record) {
+              html += '<tr><td>' + record.get("Name") + '</td>';
+              html += '<td>' + record.get("Id") + '</td></tr>';
+          });
+          html = html + '</tbody></table></div>';
+          outputDiv.innerHTML = html;
+        }
+      }
+    );
+  }
+  updateOutputDiv();
+  
+  function createAccount() {
+  var accountName = document.getElementById("accountName").value;
+  var account = new SObjectModel.Account();
+  account.create({Name: accountName}, function(error, records) {
+    if (error) {
+      alert(error.message);
+    } else {
+      updateOutputDiv();
+    }
+  });
+  return false;
+}
+
+  
+</script>
+<!-- / JAVASCRIPT -->
+
+</html>
+</apex:page>

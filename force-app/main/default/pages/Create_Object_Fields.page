@@ -1,0 +1,11 @@
+<apex:page controller="MetadataController">
+    <apex:form id="form">
+        <apex:sectionHeader title="Metadata Demo"/>
+        <apex:pageMessages />
+        <apex:actionPoller action="{!checkStatus}" interval="5" rerender="form" rendered="{!NOT(ISNULL(Result))}"/>
+        <apex:outputPanel rendered="{!ISNULL(Result)}">
+            <apex:commandButton value="Create Field" action="{!createField}"/>
+            <apex:commandButton value="Delete Field" action="{!deleteField}"/>
+        </apex:outputPanel>
+    </apex:form>
+</apex:page>

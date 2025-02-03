@@ -1,0 +1,11 @@
+<apex:page standardController="Opportunity" extensions="page_1" >
+    <apex:form >
+        
+        <apex:commandButton value="Send"/>
+        
+        <apex:pageBlock >
+            <apex:iframe src="/apex/Page_1?id={!ParentId}"/>
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page standardController="Contact" Extensions="Component_controller" >
+    <apex:form >
+        <apex:pageBlock >
+            <c:Contact_new Contact="{!contact}"></c:Contact_new>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

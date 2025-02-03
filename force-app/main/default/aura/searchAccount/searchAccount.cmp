@@ -1,0 +1,80 @@
+<aura:component controller="searchAccountController">   
+   <!--### declared attributes ###-->
+   <aura:attribute name="searchResult" type="List" description="use for store and display account list return from server"/>
+   <aura:attribute name="searchKeyword" type="String" description="use for store user search input"/>
+   <aura:attribute name="Message" type="boolean" default="false" description="use for display no record found message"/>
+   <aura:attribute name="numberOfRecord" type="integer" default="0" description="use for display Number of records"/>
+   <aura:attribute name="numberToShow" type="integer" default="0" description="use for display Number of records"/> 
+   <div class="slds-m-around--large">
+      <form class="slds-form--inline">
+         <div class="slds-form-element">
+            <label class="slds-form-element__label" for="search"></label>
+            <div class="slds-form-element__control">
+               <ui:inputText aura:id="searchId" class="slds-input" value="{!v.searchKeyword}" required="true" placeholder="Type here..."/>
+            </div>
+         </div>
+         <div class="slds-form-element">
+            <label class="slds-form-element__label" for="Count"></label>
+            <div class="slds-form-element__control">
+               <ui:inputText aura:id="countId" class="slds-input" value="{!v.numberToShow}" required="true" placeholder="Type here..."/>
+            </div>
+         </div> 
+         <div class="slds-form-element">
+            <button type="button" onclick="{!c.Search}" class="slds-button slds-button--brand">Search</button>
+         </div>
+      </form>
+      <span class="slds-badge">{!v.numberOfRecord}</span>
+      <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+         <thead>
+            <tr class="slds-text-title--caps">
+               <th scope="col">
+                  <div class="slds-truncate" title="Id">Id</div>
+               </th>
+               <th scope="col">
+                  <div class="slds-truncate" title="Account Name">Account Name</div>
+               </th>
+               <th scope="col">
+                  <div class="slds-truncate" title="Type">Type</div>
+               </th>
+               <th scope="col">
+                  <div class="slds-truncate" title="Industry">Industry</div>
+               </th>
+               <th scope="col">
+                  <div class="slds-truncate" title="Phone">Phone</div>
+               </th>
+               <th scope="col">
+                  <div class="slds-truncate" title="Fax">Fax</div>
+               </th>
+            </tr>
+         </thead>
+         <tbody>
+            <aura:if isTrue="{!v.Message}">
+               <div class="slds-text-color--error"> No Result Found...</div>
+            </aura:if>
+            <!--### display all records of searchResult attribute by aura:iteration ###-->
+            <aura:iteration items="{!v.searchResult}" var="acc">
+               <tr>
+                  <td>
+                     <div class="slds-truncate">{!acc.Id}</div>
+                  </td>
+                  <td>
+                     <div class="slds-truncate">{!acc.Name}</div>
+                  </td>
+                  <td>
+                     <div class="slds-truncate">{!acc.Type}</div>
+                  </td>
+                  <td>
+                     <div class="slds-truncate">{!acc.Industry}</div>
+                  </td>
+                  <td>
+                     <div class="slds-truncate">{!acc.Phone}</div>
+                  </td>
+                  <td>
+                     <div class="slds-truncate">{!acc.Fax}</div>
+                  </td>
+               </tr>
+            </aura:iteration>
+         </tbody>
+      </table>
+   </div>
+</aura:component>

@@ -1,0 +1,31 @@
+<apex:page standardController="Hotel__c" recordSetVar="hotel" extensions="addrow_class" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:variable value="{!0}" var="index" />
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Add Row" action="{!add_row}" reRender="tbl"/>
+                <apex:commandButton value="Save" action="{!save_rec}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!HH}" var="tl" id="tbl">
+            
+                <apex:column >
+                
+                    <apex:variable value="{!index + 1}" var="index" />
+                    <apex:outputText >
+                    {!index}
+                    </apex:outputText>
+                </apex:column>
+            
+                <apex:column >
+                    <apex:inputField value="{!tl.name}"/>
+                </apex:column>
+                
+                <apex:column >
+                    <apex:inputText />
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

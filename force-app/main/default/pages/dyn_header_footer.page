@@ -1,0 +1,52 @@
+<apex:page id="pge"  cache="true" renderAs="pdf">
+
+
+ <c:dynapdfcomponent type="header" > 
+ 
+  <div><apex:image value="{!$Resource.Man_Utd}" height="60px" width="60px"/></div>
+</c:dynapdfcomponent>
+    
+    <c:dynapdfcomponent type="footer">
+        <div>Page <span class="pagenumber"/> of <span class="pagecount"/></div>
+        <div>This is my footer</div>
+    </c:dynapdfcomponent>
+
+ <div class="content">
+
+<p>
+Me: Hello is this Sabyasachi Das.
+Sa: Yes, May I know whose this?
+Me: This side Ramitha Calling from a Company called as Cloud Experts, I got Your number from One of the Portal where you enquired about Sales Force Training, So currently you’re looking for SF Training.
+Sa: Yes, I am thinking to take up SF Training
+Me: Sabya You took a good Decision Regarding SF Training Because SF is Booming like anything in the Market, If you Became Sf Consultant you are going to have a great Future.
+So May I know Your Experienced or your Fresher? 
+Sa: Experienced, I am having 2 years of Experience has a Java Developer.
+Me: Ok, You are looking for which type of training in SF, ADM or Developer?
+Sa: I am Looking for Both<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+Me: Ok, Do you know any basic things about SF?
+Sa: Yes Little bit i know.
+Me: So, I Think You Know Sales Force is a CRM Service Provider….Right? But do you know this is 20% correct and 80% False?
+Me: Do You know Salesforce Provide many other services other than CRM? <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+This is extremely important for you to know because once you became Sales force Consultant; You need to work on other services of Salesforce also….
+Me: Do you know what is Force.Com is  why do we use Force.com Platform?
+This is important because you need to work on force.com platform as well along with Salesforce CRM.
+Me: What is Sandbox in Salesforce  types of Sandbox are available in Salesforce?
+It is extreme important for you.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+Me: Which Certification is important for Developer, Consultant or Admin?
+So, If you want to get all these information, you need to watch all these videos which I am going to sent to your mail ID… So that you get to know what you need to learn.
+Me: Actually Sabya has I told you I am calling from a company called as Cloud Experts we are having a partnership with the Sales force training  implementation so we will be implementing new projects an all so depending on that the experts of SF technology Offering one Sales Force Training  Video Material, it’s a 40hrs of Material with a High Quality and you are going to get with 3 live Projects with the Technical Excel Sheets that means you can Build at your End  so that you will get  2-3 years of equivalent experience has developer.
+Sa: How much I have to pay  What I have to do to get this?
+Me: The whole material and Projects is Completely free of Cost for next 3 Days due to offer, You just have to watch the 4 Sample Videos of Sf Material duration of 1hour 55 mints Properly and you have to revert me back to the same mail has I Finished Watching Video then I am going to process your call to Our SF Consultant So that you can Clear your Technical Doubt and Regarding Training details you will get to know, They will process you the Material  Projects.
+Sa: Ok, But I am very busy I want more time.
+Me: As I said Offer is valid for  only 3 days for one person after 3 days the offer will get Expired automatically, then you have to pay 18,000 rs to get same material  projects.
+Sa: Ok, will watch and revert you. 
+
+</p>
+
+
+</div>
+
+
+
+
+</apex:page>

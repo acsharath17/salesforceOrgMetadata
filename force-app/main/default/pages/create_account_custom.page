@@ -1,0 +1,32 @@
+<apex:page controller="create_account_custom" tabStyle="Account">
+    <apex:sectionHeader subtitle="New Account" title="Account Edit"/>
+    <apex:form >
+        <apex:pageBlock title="Account Edit" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save_account}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Account Information" collapsible="false">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account Name</apex:outputLabel>
+                    <apex:inputText value="{!acc_name}" required="true"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Phone</apex:outputLabel>
+                    <apex:inputText value="{!acc_phone}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Type</apex:outputLabel>
+                    <apex:inputText value="{!acc_type}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Website</apex:outputLabel>
+                    <apex:inputText value="{!acc_website}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

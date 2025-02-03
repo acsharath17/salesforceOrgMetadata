@@ -1,0 +1,12 @@
+<apex:page standardController="Hotel__c" >
+    <apex:sectionHeader title="Hotel Edit" subtitle="Hotel New" help="https://help.salesforce.com/htviewhelpdoc?err=1&id=co_edit.htm&siteLang=en_US"/>
+    <apex:form >
+    <apex:pageBlock title="Hotel Edit">
+        <apex:pageBlockSection title="Information" collapsible="false">
+            <apex:inputField value="{!Hotel__c.name}"/>
+            <apex:inputField value="{!Hotel__c.States__c}"/>
+            <!--<apex:inputField value="{!Hotel__c.Location__s}"/>-->
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

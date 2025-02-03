@@ -1,0 +1,12 @@
+<apex:page standardController="Opportunity" extensions="page_1,Page_2" renderAs="pdf" >
+    <apex:pageBlock >
+        <apex:outputText >{!abc}</apex:outputText><br/><br/>
+        
+        <apex:outputText >{!hello}</apex:outputText><br/><br/>
+        
+        <apex:outputText >{!ex_text}</apex:outputText><br/><br/>
+        
+        <apex:outputField value="{!opp.name}"/><br/><br/>
+        <apex:outputField value="{!opp.StageName}"/>        
+    </apex:pageBlock>
+</apex:page>

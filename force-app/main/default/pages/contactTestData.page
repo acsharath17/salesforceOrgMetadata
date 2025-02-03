@@ -1,0 +1,56 @@
+<apex:page Controller="contactDataController" id="pg" tabStyle="Contact">
+<apex:sectionHeader title="Test Contact Data" subtitle="Create !"/>
+
+    <apex:form id="frm">
+    <head>
+        <apex:includescript value="//code.jquery.com/jquery-1.11.1.min.js"/>
+        <apex:includescript value="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"/>
+        <apex:stylesheet value="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css"/>
+        
+    </head>
+    
+        
+        <apex:pageBlock id="pb">
+            <apex:pageBlockButtons >
+            <apex:commandButton action="{!contactFetch}" value="Get Contacts" reRender="pb" status="actStatusId" />
+            <apex:commandButton action="{!createContact}" value="Create Contacts" reRender="pb" disabled="{!createCon}" status="actStatusId"/>
+                <apex:actionStatus id="actStatusId" >
+                    <apex:facet name="start" >
+                      <img src="/img/loading.gif" />                    
+                    </apex:facet>
+                </apex:actionStatus>
+            </apex:pageBlockButtons>
+            <body>
+            <table id="accTable" class="display">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>User Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <apex:repeat value="{!cons}" var="cnt">
+                        <tr>
+                            <td><apex:inputField value="{!cnt.FirstName}"/></td>
+                            <td><apex:inputField value="{!cnt.LastName}"/></td>
+                            <td><apex:inputField value="{!cnt.Username__c}"/></td>
+                        </tr>
+                    </apex:repeat>
+                </tbody>
+            </table>
+            </body>
+                                  
+                
+         <script>
+        j$ = jQuery.noConflict();
+        j$(document).ready( function () {
+            var accTable = j$('[id$="accTable"]').DataTable({
+                "stateSave":true      
+            });
+        });
+        </script>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,29 @@
+<apex:page contentType="apllication/vnd.msword#Quaotation_Discount.doc">
+    <html>
+        <style>
+        #header {
+            height: 30px;
+        }
+        #footer {
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+        }
+        body {
+            height: 100%;
+            margin-bottom: 30px;
+        }
+        </style>
+        
+        <div id="header">
+            Header
+        </div>
+        <div id="content">
+            Content Body
+        </div>
+        <div id="footer">
+            Footer
+        </div>
+        
+    </html>
+</apex:page>

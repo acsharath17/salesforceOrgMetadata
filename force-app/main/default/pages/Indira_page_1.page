@@ -1,0 +1,21 @@
+<apex:page standardController="Contact" recordSetVar="con" extensions="contact_page" >
+    
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!con}" var="c">
+                
+                <apex:column >
+                    <input type="radio" name="selectRadio" id="radio">
+                    <!--<apex:actionSupport event="onclick" action="{!rec_page}" reRender="abc" >
+                    <apex:param name="cid" value="{!c.cat.Id}"/>
+                    </apex:actionSupport>-->
+                    </input>
+                </apex:column>
+                
+                <apex:column >
+                </apex:column>
+                
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

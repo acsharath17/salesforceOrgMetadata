@@ -1,0 +1,26 @@
+<apex:page standardController="Schedule_Report__c" extensions="Report_Search_and_add" tabStyle="Report">
+    <apex:sectionHeader title="Report" subtitle="Report Scheduling"/>
+    <apex:form >
+        <apex:pageBlock title="Select Users" >
+        
+            <apex:pageBlockButtons location="top" >               
+                <apex:commandButton value="Go Back" action="{!go_back}"/>
+                <apex:commandButton value="Save" action="{!onSave}"/>
+                <apex:commandButton value="Confirm" action="{!save_new}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Select Users" collapsible="false">
+                <c:MultiselectPicklist leftLabel="Available Users" leftOption="{!allUsers}" rightLabel="Selected Users" rightOption="{!selectedUsers}" size="14" width="150px"></c:MultiselectPicklist>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Additional Emails" collapsible="false">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Email Address</apex:outputLabel>
+                    <apex:inputTextarea title="Enter Email Address with comma seperated" value="{!email_add}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>    
+    </apex:form>
+    <apex:outputText >{!message}</apex:outputText>
+</apex:page>

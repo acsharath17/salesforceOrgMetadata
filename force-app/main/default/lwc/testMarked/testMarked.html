@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Markdown Editor">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <textarea
+                    class="slds-textarea"
+                    onchange={handleBodyChange}
+                    onkeyup={handleBodyChange}
+                    rows="20"
+                ></textarea>
+            </lightning-layout-item>
+
+            <lightning-layout-item size="6" padding="around-small">
+                <c-markdown-preview body={body}></c-markdown-preview>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

@@ -1,0 +1,43 @@
+<apex:page controller="Practice_customLookupPageController" id="wpage">
+<script type="text/javascript">
+var templatenameid;
+function openTemplatePopUp(field){
+    var anchortagid=field.id;
+    var rowindex=anchortagid.substring(9,10);
+    templatenameid='wpage:form1:pgb1:pgbks1:pgbsi1:pgbt1:'+rowindex+':Template';
+    //alert('--anchortagid:'+anchortagid+';--templatenameid:'+templatenameid);
+    if (field != null) {
+        field.href = "JavaScript:openLookup('/_ui/common/data/LookupPage?lkfm=editPage&lknm='+templatenameid+'&lkrf=&epf=1&lktp=00X',670,'1','&lksrch=' + escapeUTF(getElementByIdCS(templatenameid).value.substring(0, 80)))";
+    }
+}
+</script>
+<apex:form id="form1">
+   <apex:pageBlock title="Custom lookup" id="pgb1">
+       <apex:pageblockSection id="pgbks1" columns="2">
+           <apex:pageBlockSectionItem id="pgbsi1">
+               <apex:pageblockTable value="{!recordsList}" var="rec" id="pgbt1">
+                   <apex:column headerValue="Email Template">
+                       <div> 
+                            <apex:inputhidden value="{!rec.emailTemplateId}" id="Template_lkid" />                 
+                            <apex:inputhidden value="{!rec.emailTemplateName}" id="Template_lkold" /> 
+                            <span class="lookupInput"> 
+                                <apex:inputText value="{!rec.emailTemplateName}" onchange="getElementByIdCS('wpage:form1:pgb1:pgbks1:pgbsi1:pgbt1:{!rec.counter}:Template_lkid').value=''; " id="Template"/>                   
+                                <a title="Email Template Lookup (New Window)" tabindex="4" onclick="setLastMousePosition(event),openTemplatePopUp(this)" id="Template_{!rec.counter}_lkwgt" >
+                                    <img title="Email Template Lookup (New Window)" onmouseover="this.className = 'lookupIconOn';this.className = 'lookupIconOn';" onmouseout="this.className = 'lookupIcon';this.className = 'lookupIcon';" onfocus="this.className = 'lookupIconOn';" onblur="this.className = 'lookupIcon';" class="lookupIcon" alt="Email Template Lookup (New Window)" src="/s.gif" />
+                                </a>
+                            </span>
+                       </div>
+                   </apex:column>
+                   <apex:column headerValue="Frequency">
+                       <apex:selectList value="{!rec.frequency}" size="1" >
+                           <apex:selectOption itemLabel="Daily" itemValue="Daily"/>
+                           <apex:selectOption itemLabel="Weekly" itemValue="Weekly"/>
+                           <apex:selectOption itemLabel="Monthly" itemValue="Monthly"/>
+                       </apex:selectList>
+                   </apex:column>
+               </apex:pageblockTable>
+           </apex:pageBlockSectionItem>
+       </apex:pageblockSection>
+   </apex:pageBlock> 
+</apex:form>
+</apex:page>

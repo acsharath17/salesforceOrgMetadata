@@ -1,0 +1,70 @@
+<apex:page contentType="application/msword#YourDocName.doc">
+
+<style>
+    @page Section1 {
+    mso-footer:f1;
+    }
+    div.Section1 {
+    page:Section1;
+    }
+    p.MsoFooter, li.MsoFooter, div.MsoFooter {
+    mso-pagination:widow-orphan;
+    }
+</style>
+
+
+<div class="Section1">
+
+So I’ve been doing some Salesforce development and using Visualforce I’ve been trying to create a word document.  <br/>
+Sounds simple enough, but if you’ve tried it you know that you run into all sorts of issues.<br/><br/>
+
+Salesforce has this great thing with visualforce pages where you can render it as a PDF but, <br/>
+to create a word document you still have to do it the old-fashioned way and set the content type to application/msword, just as you would from a regular html page.<br/>
+<br/><br/>
+Issue #1 was that the document wouldn’t open with Internet Explorer. <br/>
+It worked fine in Firefox and Chrome and Safari and [insert new browser here], but in IE it would pop up asking you if you wanted to Open or Save the document.  <br/>
+So far so good.  If you clicked Open it would appear to be doing what its supposed to do but then nothing would happen.  Word didn’t open and you got no error message. <br/> 
+Strange.  If you clicked Save it would give you an error message saying it couldn’t open the page or something.  Crap.<br/>
+
+Solution #1.  To solve this problem I’ve discovered that you need to set cacheee = "true" in the apex:page tag.<br/><br/>
+
+Issue #2 was that I needed to be able to insert page breaks in the document at certain points and, not knowing exactly what would be in the document until it was actually created made that rather difficult. <br/> 
+I did the usual google search and there were all sorts of answers that sounded good but none of them actually worked…..until I tried one last example.  <br/>
+This one worked perfectly for me.<br/><br/>
+
+Now the only issue that I’m left with is that I can’t get page numbers to be put into the document (SOLVED: see the Update below) and I can’t get it to open in Print View. <br/> 
+I have a solution that is supposed to work, and it does work on a regular html page but not in Visualforce.  <br/>
+The issue I think is that the visualforce page you don’t have the html tag in the code to add the proper schemas too.  I will update this if I figure out the issue.<br/><br/><br/>
+
+
+Also, if anyone has any questions as to how to get a footer or header into the word document, <br/>
+or anything else that I may be able to help with please leave a comment and I will do my best to help.<br/><br/><br/>
+
+To put the header and footer into the doc there is no “GOOD” solution that I can find unfortunately.  <br/>
+The best solution I’ve managed to discover still leaves you with an extra “header/footer” on the last page of your document which you have to erase.<br/><br/>
+
+<br clear="all" style="page-break-before:always" />
+<div style="mso-element:footer">
+<p>
+<hr />
+<table>
+<tr>
+<td colspan="2" style="text-align:center;">
+Page&nbsp;
+</td>
+</tr>
+<tr>
+<td style="width:80%">
+&nbsp;
+</td>
+<td style="width:20%">
+<img width="124" height="54" src="https://c.ap2.content.force.com/servlet/servlet.ImageServer?id=01528000000FFCy&oid=00D280000014LVn&lastMod=1444146183000"/>
+</td>
+</tr>
+</table>
+</p>
+</div>
+</div>
+
+
+</apex:page>

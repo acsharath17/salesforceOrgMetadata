@@ -1,0 +1,8 @@
+<apex:page >
+    <h1>My Fancy Site</h1>
+    
+    <apex:insert name="Footer"/> <br/><br/><br/><br/><br/><br/><br/>
+    
+    <apex:insert name="Header"/>
+    
+</apex:page>

@@ -1,0 +1,13 @@
+<apex:page standardController="Hotel__c" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                
+                <apex:repeat value="{!$ObjectType.Hotel__c.fieldsets.Hotel_Object_FS}" var="fs">
+                    <apex:inputField value="{!Hotel__c[fs]}"/>
+                </apex:repeat>
+                               
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

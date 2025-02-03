@@ -1,0 +1,41 @@
+<aura:component controller="houseHandler" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction,lightning:actionOverride" access="global" >
+	<aura:attribute name="industryMap" type="Map"/>
+    <aura:attribute name="recMap" type="Map"/>
+    <aura:attribute name="selected" type="string"/>
+    <aura:attribute name="selected2" type="string"/>
+    <aura:attribute name="acc" type="Account" default="{'sobjectType':'Account', 
+                                                       'Name': '',
+                                                       'AccountNumber': '',
+                                                       'Email': '',
+                                                       'Phone': '', 
+                                                       'Industry': ''}"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div class="slds-m-around--xx-large">
+    	<div class="container-fluid">
+        	<div class="form-group">
+                <!--Lightning radio group component-->
+                <lightning:radioGroup name="radioGroup"
+                                      label="Record Type"
+                                      required="true"
+                                      options="{!v.recMap}"
+                                      value="{!v.selected2}"
+                                      type="radio"
+                                      onclick="{!c.rtChange}"/>
+            </div>
+            
+            <!--<div class="form-group">
+                
+                <lightning:radioGroup name="radioGroup"
+                                      label="Industry"
+                                      required="true"
+                                      options="{!v.industryMap}"
+                                      value="{!v.selected}"
+                                      type="radio"/>
+            </div>-->
+	
+        </div>
+    </div>
+		
+</aura:component>

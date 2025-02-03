@@ -1,0 +1,30 @@
+<apex:page standardController="Account" recordSetVar="accounts" extensions="query_Account" >
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!Acc}" var="ac">          
+            <apex:column headerValue="Company Name">
+                <apex:inputField value="{!ac.name}"/>
+            </apex:column>            
+            <apex:column value="{!ac.phone}"/>           
+        </apex:pageBlockTable>        
+        <br/>
+        <br/>
+        
+        <table>
+            <tr>
+                <td>Account name</td>
+                <td>Phone</td>
+            </tr>
+            
+            <apex:repeat value="{!Acc}" var="ab">
+                <tr>
+                    <td>{!ab.name}</td>
+                    <td>{!ab.phone}</td>
+                </tr>
+            </apex:repeat>
+            
+        </table>
+        
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

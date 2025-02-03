@@ -1,0 +1,46 @@
+<apex:page controller="Search_opp_v3" tabStyle="Opportunity" >
+    
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Filter" collapsible="false">
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Stage</apex:outputLabel>
+                    <apex:selectList multiselect="false" size="1" value="{!stage_name}">
+                        <apex:selectOptions value="{!Stage_name1}"/> <apex:actionSupport event="onchange" reRender="Lst"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Type</apex:outputLabel>
+                    <apex:selectList size="1" multiselect="false" value="{!type_name}">
+                        <apex:selectOptions value="{!type_name1}" />  <apex:actionSupport event="onchange" reRender="Lst"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSection title="Opportunity List" collapsible="false" columns="1" id="Lst">
+                    <apex:pageBlockTable value="{!Opp_list}" var="pp">
+                        <apex:column >
+                            <apex:inputCheckbox value="{!pp.sel}" /> <apex:actionSupport event="onclick" action="{!opp_sel}" reRender="sel"/>
+                        </apex:column>
+                        <apex:column value="{!pp.op.name}"/>
+                        <apex:column value="{!pp.op.Amount}"/>
+                        <apex:column value="{!pp.op.StageName}"/>
+                        <apex:column value="{!pp.op.Type}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Selected Opportunity" id="sel">
+                    <apex:pageBlockTable value="{!sel_opp}" var="se">
+                        <apex:column value="{!se.name}"/>
+                        <apex:column value="{!se.Amount}"/>
+                        <apex:column value="{!se.type}"/>
+                        <apex:column value="{!se.stagename}"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlockSection>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

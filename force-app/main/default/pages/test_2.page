@@ -1,0 +1,34 @@
+<apex:page standardController="Account" extensions="test_2,ttttt" >
+    <apex:sectionHeader title="New Account"/>
+    <apex:form >
+        <apex:pageBlock title="Account Information" >
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!custom_save}" value="Save"/>
+                <apex:commandButton value="Edit"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection columns="3" >
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Phone</apex:outputLabel>
+                    <apex:inputText value="{!phone}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Company Name</apex:outputLabel>
+                    <apex:inputText required="true" value="{!Account_name}"/>                    
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Fax</apex:outputLabel>
+                    <apex:inputText value="{!fax}"/>                   
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel > Test Field</apex:outputLabel>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

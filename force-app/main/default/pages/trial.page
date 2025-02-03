@@ -1,0 +1,68 @@
+<apex:page standardController="Opportunity" recordSetVar="opp" >
+    
+    <!-- Page Block Table -->
+    
+    <apex:pageBlock title="Page Block Table" >
+    
+    <apex:pageBlockTable value="{!opp}" var="acc">
+        <apex:column value="{!acc.name}"/>
+        <apex:column value="{!acc.Stagename}"/>
+        <apex:column value="{!acc.Amount}"/>
+    </apex:pageBlockTable>
+    
+    </apex:pageBlock>
+    
+    <!-- Page Block Table -->
+    
+    <br/>
+    <br/>
+    <br/>
+    
+    <!--  Data Table -->
+    
+    <apex:pageBlock title="Data Table" >
+    
+    <apex:dataTable value="{!opp}" var="op" border="1px">
+        
+        <apex:facet name="caption" > Table Caption</apex:facet>
+        <apex:facet name="header"> Table Header </apex:facet>
+        <apex:facet name="footer"> Table Footer</apex:facet>
+        
+        <apex:column >
+            <apex:facet name="header"> Opportunity Name</apex:facet>
+            <apex:facet name="footer">Footer</apex:facet>
+            <apex:outputText >{!op.name}</apex:outputText>
+        </apex:column>
+        
+        <apex:column >
+            <apex:facet name="header"> Opportunity Stage</apex:facet>
+            <apex:facet name="footer">Footer Stage</apex:facet>
+            <apex:outputText >{!op.stagename}</apex:outputText>
+        </apex:column>
+        
+    </apex:dataTable>
+    </apex:pageBlock>
+    <!--  Data Table -->
+    
+    
+    <br/>
+    <br/>
+    <br/>
+    
+    <apex:pageBlock title="html Table" >
+    <table>
+        <tr>
+            <th>Opportunity Name</th>
+            <th>Opportunity Stage</th>
+        </tr>
+        
+        <apex:repeat value="{!opp}" var="pp">
+            <tr>
+                <td>{!pp.name}</td>
+                <td>{!pp.StageName}</td>
+            </tr>
+        </apex:repeat>
+        
+    </table>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,29 @@
+<apex:page standardController="Contact" >
+    <apex:sectionHeader title="Contact Edit" subtitle="New Contact"/>
+    <apex:form >
+        <apex:pageBlock title="Contact Edit">
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection title="Contact Information" collapsible="false" columns="3">
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Name</apex:outputLabel>
+                    <apex:inputField value="{!Contact.lastname}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:inputField value="{!Contact.AccountId}"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Contact Email</apex:outputLabel>
+                    <apex:inputField value="{!contact.email}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:inputField value="{!contact.phone}"/>
+                <apex:inputField value="{!contact.Department}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,30 @@
+<apex:page controller="radio_button">
+    <apex:form >
+        
+<apex:outputPanel style="width:100px;backgroung:green" >
+    
+    <apex:actionFunction name="radiocall" action="{!submit}" reRender="ad" >
+           <apex:param value="" name="myParam" assignto="{!val}"/>
+    </apex:actionfunction>
+    
+    <apex:outputPanel >
+        <apex:outputLabel >Result</apex:outputLabel>
+    </apex:outputPanel>
+    <apex:outputPanel rendered="{!access1}" >
+        <input type="radio" onclick="radiocall(this.value);" name="gender" value="Pass" checked="Pass"/><apex:inputText style="width:20px" value="{!val1}"/> Pass <br/>
+        <input type="radio" onclick="radiocall(this.value);" name="gender" value="Fail" style="margin-left:42px;"/> Fail
+    </apex:outputPanel>
+    
+    <apex:outputPanel rendered="{!access2}">
+        <input type="radio" onclick="radiocall(this.value);" name="gender" value="Pass"/><apex:inputText style="width:20px" value="{!val1}"/> Pass <br/>
+        <input type="radio" onclick="radiocall(this.value);" name="gender" value="Fail" style="margin-left:42px;" checked="Fail"/> Fail
+    </apex:outputPanel>
+    
+</apex:outputPanel><br/>
+
+<apex:commandButton value="call" action="{!submit}"/>
+
+
+
+    </apex:form>
+</apex:page>

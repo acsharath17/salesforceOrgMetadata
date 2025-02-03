@@ -1,0 +1,23 @@
+<apex:page standardController="Opportunity" extensions="Shiva_Example_2" >
+    <apex:form >
+        <apex:pageBlock title="Manual Invocation Through Button" >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Get Records" action="{!Opp_List}"/> <!-- Only void methods and Pagereference Methods can be called through a button -->
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!Opp}" var="pp"> <!-- Since Opp List is not initalized in contructor we'll not see any data in page once it is loaded we have to click on button to get data to Opp -->
+                <apex:column value="{!pp.name}"/>
+                <apex:column value="{!pp.StageName}"/>
+                <apex:column value="{!pp.Amount}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Using Get Method">
+            <apex:pageBlockTable value="{!all_opp}" var="op">
+                <apex:column value="{!op.Name}"/>
+                <apex:column value="{!op.StageName}"/>
+                <apex:column value="{!op.Amount}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

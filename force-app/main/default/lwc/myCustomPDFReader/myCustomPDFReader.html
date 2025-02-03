@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="AI Query Handler">
+        <div class="slds-p-around_medium">
+            <lightning-textarea
+                label="Enter your query"
+                value={userQuery}
+                onchange={handleInputChange}>
+            </lightning-textarea>
+            <lightning-button
+                label="Submit"
+                onclick={handleSubmit}
+                class="slds-m-top_medium">
+            </lightning-button>
+            <template if:true={finalAnswer}>
+                <div class="slds-m-top_medium slds-scrollable">
+                    <lightning-formatted-text value={finalAnswer}></lightning-formatted-text>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

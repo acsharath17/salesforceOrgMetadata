@@ -1,0 +1,37 @@
+<apex:page controller="actionSupDemo" >
+ 
+ <!--A component that displays the status of an AJAX update request. An AJAX request can either be in progress or complete. -->
+ 
+    <apex:form >
+ 
+        <apex:pageBlock >
+ 
+            <apex:pageBlockSection >
+ 
+                <apex:outputpanel id="showpanel1">
+ 
+                    <apex:outputText value="Click here to display Current username !"/>
+                
+                    <apex:actionSupport event="onmouseover" action="{!showUserName}" rerender="display" status="currentStatus"/>
+                    
+                     <apex:actionStatus id="currentStatus" startText=" (displaying...)" stopText=" (done)"/>
+                
+                </apex:outputpanel>              
+ 
+                   <apex:outputpanel id="hidepanel">
+                   
+                    <apex:outputText value="Click here to Hide Current username!"/>
+                   
+                    <apex:actionSupport event="onclick" action="{!HideUserName}" rerender="display" status="currentStatus2"/>
+                   
+                    <apex:actionStatus id="currentStatus2" startText=" (hiding...)" stopText=" (done)"/>
+                
+                </apex:outputpanel> 
+                
+                 
+                  <apex:outputText value="{!name}" id="display" label="Current user Is:"/>
+ 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

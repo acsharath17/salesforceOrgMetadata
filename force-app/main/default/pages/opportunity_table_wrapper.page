@@ -1,0 +1,34 @@
+<apex:page showHeader="true" standardStylesheets="true" sidebar="false"  standardController="Account"  extensions="test_wrapper">
+    <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!all_Account}" var="aa">
+            <apex:column >
+                <apex:inputCheckbox />
+            </apex:column>
+            <apex:column value="{!aa.name}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+    <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Show Selected" action="{!sel_acc}"/>
+        </apex:pageBlockButtons>
+        <apex:pageBlockTable value="{!acc_List}" var="vv">
+            <apex:column >
+                <apex:inputCheckbox value="{!vv.selected}"/>
+            </apex:column>
+            <apex:column value="{!vv.acc.name}"/>
+            <apex:column value="{!vv.acc.type}"/>
+        </apex:pageBlockTable>
+        
+        <br/><br/><br/>
+        
+        <apex:pageBlockTable value="{!selected_acc}" var="ss">
+            <apex:column value="{!ss.name}"/>
+            <apex:column value="{!ss.type}"/>
+        </apex:pageBlockTable>
+    
+    </apex:pageBlock>
+    
+    </apex:form>  
+</apex:page>

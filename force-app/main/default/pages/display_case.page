@@ -1,0 +1,8 @@
+<apex:page StandardController="Account" extensions="display_case" >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!Rel_case}" var="cc">
+            <apex:column value="{!cc.subject}"/>
+            <apex:column value="{!cc.Status}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

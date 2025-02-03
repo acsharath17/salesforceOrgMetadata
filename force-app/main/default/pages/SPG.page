@@ -1,0 +1,22 @@
+<apex:page >
+    <apex:form >
+        <script>
+        function sync()
+        {
+          var n1 = document.getElementById('n1');
+          var n2 = document.getElementById('n2');
+          n2.value = n1.value;
+        }
+        </script>
+        <input type="text" name="n1" id="n1" onkeypress="sync()"/>
+        <input type="text" name="n2" id="n2"/>
+        
+        <table>
+            <tr>
+                <td>One</td>
+                <td>Two</td>
+            </tr>
+        </table>
+        
+    </apex:form>
+</apex:page>

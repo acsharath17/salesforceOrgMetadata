@@ -1,0 +1,28 @@
+<aura:component >
+    <ul class="slds-has-dividers_bottom-space">
+        <li class="slds-item">
+            <lightning:tile label="Astro" href="/path/to/somewhere">
+                <aura:set attribute="media">
+                    <lightning:avatar src="/path/to/img" alternativeText="Astro"/>
+                </aura:set>
+                <ul class="slds-list_horizontal slds-has-dividers_right">
+                    <li class="slds-item">Trailblazer, Salesforce</li>
+                    <li class="slds-item">Trailhead Explorer</li>
+                </ul>
+            </lightning:tile>
+        </li>
+        
+        <li class="slds-item">
+            <lightning:tile label="Astro 2" href="/path/to/somewhere">
+                <aura:set attribute="media">
+                    <lightning:avatar src="/path/to/img" alternativeText="Astro"/>
+                </aura:set>
+                <ul class="slds-list_horizontal slds-has-dividers_right">
+                    <li class="slds-item">Trailblazer, Salesforce 2</li>
+                    <li class="slds-item">Trailhead Explorer 2</li>
+                </ul>
+            </lightning:tile>
+        </li>
+        <!-- More list items here -->
+    </ul>
+</aura:component>

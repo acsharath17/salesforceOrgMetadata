@@ -1,0 +1,82 @@
+<aura:component >
+    <aura:attribute name="Contacts" type="Contact[]"/>
+    
+    <aura:attribute name="NewContact" type="Contact"
+                    default="{'sobjectType': 'Contact',
+                             'LastName'		:'',
+                             'FirstName'	:'',
+                             'Email'		:'',
+							 'LeadSource'	:'',
+							 'Phone'		:''                             
+                             }"/>
+        <div class="slds-col slds-col--padded slds-p-top--large">
+        <div aria-labelledby="Accountform">
+            <!-- BOXED AREA -->
+            <fieldset class="slds-box slds-theme--default slds-container--small">
+                <legend id="Accountform" class="slds-text-heading--small
+                                                       slds-p-vertical--medium">
+                    Add Account
+                </legend>
+                <!-- CREATE NEW Account FORM -->
+                <form class="slds-form--stacked">
+                <div class="slds">
+    <div class="slds-grid slds-wrap">
+     <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2">
+
+      <div class="slds-form-element slds-is-required">
+       <div class="slds-form-element__control">
+        <ui:inputText aura:id="account Name" label="Account Name"
+             class="slds-input"
+             labelClass="slds-form-element__label"
+             value="{!v.newAccount.Name}"
+             />
+       </div>
+                        </div>
+                         
+                        <div class="slds-form-element">
+                          <div class="slds-form-element__control">
+                              <ui:inputDate aura:id="accountSLADate" label="SLA Expiration Date"
+                                  class="slds-input"
+                                  labelClass="slds-form-element__label"
+                                  value="{!v.newAccount.ksk__SLAExpirationDate__c}"
+                                  displayDatePicker="true"/>
+                          </div>
+                      </div>
+      
+      
+     </div>
+     <div class="slds-col--padded slds-size--1-of-1 slds-medium-size--1-of-2">
+      <div class="slds-form-element__control">
+       <ui:inputText aura:id="expname" label="Site"
+            class="slds-input"
+            labelClass="slds-form-element__label"
+            value="{!v.newAccount.ksk__Site}"
+            />
+      </div>
+      <div class="slds-form-element__control">
+       <ui:inputText aura:id="expname" label="SIC Description"
+            class="slds-input"
+            labelClass="slds-form-element__label"
+            value="{!v.newAccount.ksk__SicDesc}"
+            />
+      </div>
+
+       <div class="slds-form-element__control">
+        <ui:inputText aura:id="accountSerialNumber" label="SLA Serial Number"
+             class="slds-input"
+             labelClass="slds-form-element__label"
+             value="{!v.newAccount.ksk__SLASerialNumber__c}"
+             />
+       </div>
+     </div>
+    </div>
+   </div>  
+   
+            </form>
+            <!-- / CREATE NEW Account FORM -->
+            </fieldset>
+            <!-- / BOXED AREA -->
+        </div>
+        <!-- / CREATE NEW Account -->
+    </div>
+</aura:component>

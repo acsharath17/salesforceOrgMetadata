@@ -1,0 +1,42 @@
+<apex:page controller="PagingController_3">  
+  <apex:form id="frm" >
+    <apex:pageBlock title="Paging through Categories of Stuff">
+
+      <apex:pageBlockButtons location="top" id="pb">
+        <!--<apex:commandButton action="{!process}" value="Process Selected"/>-->
+        <apex:commandButton action="{!cancel}" value="Cancel"/>
+        <apex:commandButton value="Go To Record" action="{!goto}" id="cm"/>
+        <apex:commandButton value="Search" action="{!process}" reRender="frm" />
+      </apex:pageBlockButtons>
+      <apex:pageMessages />
+
+      <!--<apex:pageBlockSection title="Category Results -  Page #{!pageNumber}" columns="1">-->
+      <apex:pageBlockSection title="Category Results -  Page " columns="1">
+      <apex:inputText value="{!a}"/>    
+        <apex:pageBlockTable value="{!cons}" var="c">
+            <apex:column >
+                <input type="radio" name="selectRadio" id="radio">
+                    <apex:actionSupport event="onclick" action="{!rec_page}"  reRender="frm1">
+                    <apex:param name="cid" value="{!c.Id}"/>
+                    </apex:actionSupport>
+                </input>
+            </apex:column>
+                     
+         <!-- <apex:column width="25px">
+            <apex:inputCheckbox value="{!c.checked}"/>
+          </apex:column>-->
+          <apex:column value="{!c.Name}" headerValue="Name"/>
+          <!--<apex:column value="{!c.email}" headerValue="Email"/>-->
+        </apex:pageBlockTable>
+      </apex:pageBlockSection>
+    </apex:pageBlock>
+
+    <apex:panelGrid columns="4">
+    <apex:commandLink action="{!first}">First</apex:commandlink>
+    <apex:commandLink action="{!previous}" rendered="{!hasPrevious}">Previous</apex:commandlink>
+    <apex:commandLink action="{!next}" rendered="{!hasNext}" reRender="frm">Next</apex:commandlink>
+    <apex:commandLink action="{!last}">Last</apex:commandlink>
+    </apex:panelGrid>
+
+  </apex:form>
+</apex:page>

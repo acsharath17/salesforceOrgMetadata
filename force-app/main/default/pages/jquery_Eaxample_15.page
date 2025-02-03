@@ -1,0 +1,23 @@
+<apex:page >
+  <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              $("button").click(function(){
+                  $("p").toggle(500);
+              });
+          });
+      </script>
+      
+  </head>
+  
+  <body>
+
+<button>Toggle between hiding and showing the paragraphs</button>
+
+<p>This is a paragraph with little content.</p>
+<p>This is another small paragraph.</p>
+
+</body>
+  
+</apex:page>

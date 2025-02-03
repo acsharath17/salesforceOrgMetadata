@@ -1,0 +1,34 @@
+<apex:page controller="Account_E2">
+    <apex:form >
+        <apex:pageBlock >
+            
+            <apex:pageBlockButtons >
+                    <apex:commandButton value="Save" action="{!save_Account}"/>
+                </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                       
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account Name</apex:outputLabel>
+                    <apex:inputText value="{!acc_name}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Phone</apex:outputLabel>
+                    <apex:inputText value="{!acc_phone}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Website</apex:outputLabel>
+                    <apex:inputText value="{!acc_website}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Fax</apex:outputLabel>
+                    <apex:inputText value="{!acc_fax}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page standardController="contact" extensions="contactSearchController" >
+    <apex:form >
+        <apex:pageBlock title="Customer" >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Phone Number</apex:outputLabel>
+                    <apex:inputText />
+                </apex:pageBlockSectionItem>                
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel ></apex:outputLabel>
+                    <apex:commandButton value="Search"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,28 @@
+<apex:page controller="New_Page_Class" >
+    <apex:form id="frm" >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Amend" action="{!Amend}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!all_con}" var="c">
+            
+            <apex:column width="50px" >
+                <input type="radio" name="selectRadio" id="radio">
+                    <apex:actionSupport event="onclick" action="{!rec_page}" reRender="pb,cm" >
+                    <apex:param name="cid" value="{!c.Id}"/>
+                    </apex:actionSupport>
+                </input>
+            </apex:column>
+            
+                <apex:column value="{!c.name}"/>
+                <apex:column value="{!c.email}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <apex:panelGrid columns="4">
+    <apex:commandButton action="{!first}" value="First" reRender="frm"></apex:commandButton>
+    <apex:commandButton action="{!previous}" rendered="{!hasPrevious}" value="Previous" reRender="frm"></apex:commandButton>
+    <apex:commandButton action="{!next}" rendered="{!hasNext}" value="Next" reRender="frm"></apex:commandButton>
+    <apex:commandButton action="{!last}" value="Last" reRender="frm"></apex:commandButton>
+    </apex:panelGrid>
+    </apex:form>
+</apex:page>

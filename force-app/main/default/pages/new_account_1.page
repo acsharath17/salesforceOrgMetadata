@@ -1,0 +1,45 @@
+<apex:page controller="Example3" >
+    
+    <apex:form >
+        <apex:pageBlock >
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!onSave}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+                
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account Name</apex:outputLabel>
+                    <apex:inputText value="{!acc_name}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >PHone</apex:outputLabel>
+                    <apex:inputText value="{!acc_phone}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Fax</apex:outputLabel>
+                    <apex:inputText value="{!acc_fax}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Website</apex:outputLabel>
+                    <apex:inputText value="{!acc_website}" />
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Industry</apex:outputLabel>
+                    <apex:selectList multiselect="false" size="1" value="{!acc_Industry}">
+                        <apex:selectOption itemValue="IT" itemLabel="IT"/>
+                        <apex:selectOption itemValue="Government" itemLabel="Government"/>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

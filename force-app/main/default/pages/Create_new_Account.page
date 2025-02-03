@@ -1,0 +1,27 @@
+<apex:page standardController="Account" Extensions="Example3" >
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageMessage summary="This pageMessage will always display. Validation error 
+           messages appear in the pageMessages component." severity="warning" strength="3" />
+        <apex:pageMessages />
+            <apex:commandButton value="Save" action="{!res}"/>
+            <apex:pageBlockSection >
+              
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel >a</apex:outputLabel>
+                   <apex:inputText value="{!a}"/>
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputLabel >b</apex:outputLabel>
+                   <apex:inputText value="{!b}"/>
+               </apex:pageBlockSectionItem>
+               
+               <apex:pageBlockSectionItem >
+                   <apex:outputText >{!c}</apex:outputText>    
+               </apex:pageBlockSectionItem>
+               
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

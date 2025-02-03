@@ -1,0 +1,133 @@
+<apex:page controller="reconReport_Controller" tabStyle="DEL_RECON_Accelerator__c">
+<apex:sectionHeader title="Recon Report" />
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<head>
+        <apex:includescript value="//code.jquery.com/jquery-1.11.1.min.js"/>
+        <apex:includescript value="//cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"/>
+        <apex:stylesheet value="//cdn.datatables.net/1.10.4/css/jquery.dataTables.css"/>
+        <script>
+        j$ = jQuery.noConflict();
+        j$(document).ready( function () {
+            var accTable = j$('[id$="recTable"]').DataTable({
+                
+            });
+        });
+        </script>
+    </head>
+
+<!--<script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Status', 'Count'],
+          ['Attended',  50],
+          ['Partially Attended', 30],
+          ['Absent',  20],
+        ]);
+        var options = {
+          title: 'My Attendance',
+          pieHole: 0.4,
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>-->
+    
+    
+
+    <apex:form >
+        <apex:pageBlock title="Select Columns">
+            <apex:pageBlockSection >
+            <apex:panelGrid columns="3" id="abcd">
+                <apex:selectList id="sel1" value="{!leftSelected}" multiselect="true"  size="5">
+                    <apex:selectOptions value="{!DeselectedValues}" />
+                </apex:selectList>
+                 
+                <apex:panelGroup >
+                    <br/>
+                    <apex:image styleClass="picklistArrowRight" value="/s.gif">
+                        <apex:actionSupport event="onclick" action="{!getSelect}" reRender="abcd,tab1"/>
+                    </apex:image>
+                    <br/><br/>
+                    <apex:image styleClass="picklistArrowLeft" value="/s.gif">
+                        <apex:actionSupport event="onclick" action="{!getDeselect}" reRender="abcd,tab1"/>
+                    </apex:image>
+                </apex:panelGroup>
+                <apex:selectList id="sel2" value="{!rightSelected}" multiselect="true" style="width:300px"  size="5">
+                    <apex:selectOptions value="{!SelectedValues}" />
+                </apex:selectList>
+            </apex:panelGrid>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Report Data" id="tab1">
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Get Data" action="{!dataForTable}" reRender="tab1"/>
+        </apex:pageBlockButtons>
+            <table style="border: 1px solid black;">
+                <tr style="border: 1px solid black;">
+                    <apex:repeat value="{!tableHeaders}" var="sel">
+                        <th style="border: 1px solid black;">{!sel}</th>
+                    </apex:repeat>
+                </tr>
+                <apex:repeat value="{!finalTableValues}" var="FT">
+                    <tr style="border: 1px solid black;">
+                    <apex:repeat value="{!finalTableValues[FT]}" var="val">
+                        
+                            <td style="border: 1px solid black;">
+                                <!--<apex:commandLink value="{!val}" action="{!goNext}" rerender="popup" status="status"/>-->
+                                <apex:commandLink value="{!val}" />
+                            </td>
+                                                   
+                    </apex:repeat>
+                    </tr>
+                    
+                </apex:repeat>
+            </table>
+            
+        </apex:pageBlock>
+        <apex:outputPanel id="popup">
+            <apex:outputPanel id="popInnerOutputPnl" styleClass="customPopup" layout="block" rendered="{!displayPopUp}">
+            
+                <apex:commandButton value="X" title="Close the popup" action="{!closePopup}" styleClass="closeButton" rerender="popup"/>
+                
+                
+                <div id="popup:popInnerOutputPnl:donutchart" style="width: 900px; height: 500px;"></div>
+    
+            
+            </apex:outputPanel>
+        </apex:outputPanel>
+        
+<style type="text/css">
+    .customPopup {
+        background-color: white;
+        border-style: solid;
+        border-width: 2px;
+        left: 20%;
+        padding: 10px;
+        position: absolute;
+        z-index: 9999;   
+        width: 500px;
+        top: 20%;
+    }
+    
+    .disabledTextBox {
+        background-color: white;
+        border: 1px solid;
+        color: black;
+        cursor: default;
+        width: 90px;
+        display: table;
+        padding: 2px 1px;
+        text-align:right;
+    }   
+    
+    .closeButton {
+        float: right;
+    }
+</style>
+        
+    </apex:form>  
+</apex:page>

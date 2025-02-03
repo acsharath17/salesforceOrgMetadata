@@ -1,0 +1,17 @@
+<apex:page controller="DEL_RECON_AcceleratorRequest" sidebar="false" showHeader="false" >
+    <apex:form >
+        <br/>
+        <apex:outputLabel value="{!csvNotSelectedError}" id="outputError"></apex:outputLabel>
+        <apex:outputLabel value="{!csvNotSelectedSuccess}" id="successError"></apex:outputLabel>
+        
+        <apex:pageBlock title="Upload File" >
+            <apex:pageBlockSection >
+                <apex:outputPanel > 
+                      <apex:inputFile value="{!csvFileBody}"  filename="{!csvFileName}"  />
+                </apex:outputPanel>
+                <apex:commandButton value="Upload" action="{!importCSVFile}" onclick="ClosePopup" styleClass="btn" id="importbtn" style="width:80px;"/>   
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

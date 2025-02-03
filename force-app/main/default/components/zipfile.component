@@ -1,0 +1,106 @@
+<!--
+/**
+ * Copyright (c) 2012, FinancialForce.com, inc
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without modification, 
+ *   are permitted provided that the following conditions are met:
+ *
+ * - Redistributions of source code must retain the above copyright notice, 
+ *      this list of conditions and the following disclaimer.
+ * - Redistributions in binary form must reproduce the above copyright notice, 
+ *      this list of conditions and the following disclaimer in the documentation 
+ *      and/or other materials provided with the distribution.
+ * - Neither the name of the FinancialForce.com, inc nor the names of its contributors 
+ *      may be used to endorse or promote products derived from this software without 
+ *      specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
+ *  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES 
+ *  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL 
+ *  THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+ *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ *  OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+ *  OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+**/
+ -->
+<apex:component >
+	<apex:attribute name="name" type="string"
+		description="Name of the Javascript function generated to unzip files" />
+	<apex:attribute name="state" type="string"
+		description="Value passed to the JavaScript Remoting action calls as each file is unzipped." />
+	<apex:attribute name="getzipfileentry" type="string"
+		description="Name of a JavaScript Remoting action retrieve a given zip file entry." />
+	<apex:attribute name="oncomplete" type="string"
+		description="JavaScript executed when the zip file generation is complete." />
+	<c:zip name="zip{!name}" oncomplete="{!oncomplete}">
+		<apex:componentBody />
+		<!--  Output children, typically <c:zipEntry> components -->
+	</c:zip>
+	<script type="text/javascript">
+		// Component client side state 
+		// TODO: Need to scope these global var's by component name
+		var zipFileNames = null;
+		var zipFileEntry = null;
+
+		// Method called by page to either make a request for the next zip entry file data or if none remain call oncomplete
+		function {!Name}Generate()
+		{
+			// First call, list of zip file entries to request data for?
+			if(zipFileNames==null)
+			{
+				zipFileNames = [];
+				for(var zipfileName in zipFile.files)
+					zipFileNames.push(zipfileName);
+			}
+			// Find next zip file to request data for?  
+			var file = null;
+			var fileName = null;
+			while(true)
+			{
+				file = null;
+				fileName = zipFileNames.pop()
+				if(fileName != null)
+				{
+					file = zipFile.files[fileName];
+					if(file.options.dir)
+						continue;
+				}
+				break;
+			}
+			// File to request or all done?
+			var more = file!=null ? true : false;
+			if(more)
+			{
+				// Call JavaScript Remoting to request file data for given file
+				zipFileEntry = file;
+				getZipFileEntry(fileName, '{!state}'); // TODO: Make state read/write				
+			}
+			else
+			{
+				// Call generate 
+				zip{!name}Generate();
+			}
+		}
+	
+		// Function makes remote call to server to request file data on success calls the generate function above to proceed to next file or complete
+		function getZipFileEntry(path, state) {
+			Visualforce.remoting.Manager.invokeAction(
+				'{!getzipfileentry}', 
+				path, state,
+				function(result, event){
+					if (event.status) {
+						zipFileEntry.data = result;
+						{!name}Generate();
+					} else if (event.type === 'exception') {
+						alert(event.message);
+					} else {
+						alert(event.message);
+					}
+				}, 
+				{escape: true}
+			);
+		}
+	</script>
+</apex:component>

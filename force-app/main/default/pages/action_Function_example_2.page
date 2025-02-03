@@ -1,0 +1,51 @@
+<apex:page controller="InsertLeadController" showHeader="false">
+
+<script type="text/javascript">
+function validate()
+    {
+        if(document.getElementById('{!$Component.LF.LDB.Lname}').value == '' || document.getElementById('{!$Component.LF.LDB.comp}').value == '')
+        {
+            document.getElementById('{!$Component.LF.LDB.mob}').value = 10*10;
+            alert("LAST NMAE & Company are requird fields");
+        }
+        
+        else
+        {
+            CallsubmitLead();
+            alert("Lead has been inserted");
+        }
+    }
+    
+ </script>
+    
+ <apex:form id="LF">
+ <apex:actionFunction action="{!submitLead}" name="CallsubmitLead" reRender="LDB"/>  
+ <apex:pageBlock title="Lead Form - Enter lead details" id="LDB"> 
+  <table>
+  <tr>
+  <td><apex:outputText value="First Name"/></td>
+  <td><apex:inputText value="{!firstName}"/></td>
+  </tr>  
+  <tr>
+  <td><apex:outputText value="Last Name"/></td>
+  <td><apex:inputText value="{!lastName}" id="Lname"/></td>
+  </tr>  
+  <tr>
+  <td><apex:outputText value="Comapany"/></td>
+  <td><apex:inputText value="{!comapany}" id="comp"/></td>
+  </tr>  
+  <tr>
+  <td><apex:outputText value="Mobile"/></td>
+  <td><apex:inputText value="{!mobile}" id="mob"/></td>
+  </tr>  
+  <tr>
+  <td><apex:outputText value="Lead Status"/></td>
+  <td><apex:selectList value="{!statusOptions}" size="1">
+  <apex:selectOptions value="{!items}"/>
+  </apex:selectList></td>
+  </tr>
+  </table>  
+  <apex:commandButton value="Save" onclick="validate();"/> 
+ </apex:pageBlock>  
+  </apex:form>
+</apex:page>

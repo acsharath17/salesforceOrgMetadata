@@ -1,0 +1,73 @@
+<apex:page controller="OpportunityRemoteActionController" showHeader="true">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+function getStageJS(){
+ var oppStage= document.getElementById("{!$Component.theFm.oppStage}").value;  
+  // alert("stageName==>"+oppStage); 
+  OpportunityRemoteActionController.getOpportunityDetails( oppStage,
+
+    function(result, event){
+
+     // alert("event.status==>"+event.status);
+     // alert("event.result==>"+event.result);
+         var html = '<table border="thick solid">';
+          html = html + '<caption><b>Opportunity Details</b></caption><tr></tr>';
+          html = html + '<tr><th>Opportunity Name</th>';
+          html = html + '<th>Amount</th> ';
+          html = html + '<th> Stage</th> </tr>';
+         if (event.status && event.result) {
+        debugger;
+        <!-- alert("event.result[0].Name==>"+event.result[0].Name);           -->
+          for (var prop in event.result) {
+          // important check that this is objects own property not from prototype prop inherited    
+          //alert(prop + " = " + event.result[prop].Name);
+          <!--html = html + '<tr><td><a href="'+event.result[prop].Name+'</td> <td>'+event.result[prop].Amount+'</td></tr> ';-->
+          html = html + '<tr><td>'+event.result[prop].Name+'</td> <td>'+event.result[prop].Amount+'</td><td>'+ event.result[prop].StageName +'</td></tr> ';
+          
+      }
+      
+       html = html + '</table>';
+      
+         
+           // alert("html==>"+html);
+            $("#opportunityDetails").html(html);
+            
+
+      } else {
+
+             alert(event.message);
+
+      }
+
+}, {escape:true});
+
+
+ 
+
+}
+ 
+ </script>
+ 
+   <div align="Left" width="550px">
+ 
+     
+      <apex:form id="theFm">
+ 
+        <apex:selectList value="{!stageName}" size="1" id="oppStage" onchange="getStageJS()">
+ 
+         <apex:selectOptions value="{!options}"/>
+ 
+         </apex:selectList>
+ 
+      </apex:form>
+ 
+   </div>
+   <br/>
+   <br/>
+   <div id="opportunityDetails" align="Left">
+ 
+         <!-- Opportunity details is displayed here. -->
+ 
+   </div>
+ 
+</apex:page>

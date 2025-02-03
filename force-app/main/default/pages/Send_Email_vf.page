@@ -1,0 +1,31 @@
+<apex:page standardController="WorkOrder" extensions="Email_Attachment" >
+    <apex:form >
+        <apex:pageBlock title="Email Body" >
+            <apex:pageBlockButtons location="top" >
+                <apex:commandButton value="Send Mail" action="{!SendEmail}"/>
+            </apex:pageBlockButtons>
+            
+            
+            <apex:inputTextarea richText="true"/><br/><br/>
+                       
+            
+        </apex:pageBlock>
+        
+        <apex:pageBlock id="Available" title="File Attachments">
+            <apex:variable value="{!0}" var="rowNum"/> 
+            <apex:pageBlockTable value="{!AllAttachments}" var="aa" title="Attachments">
+                
+                <apex:column headervalue="Action">
+                <apex:commandlink value="Remove" action="{!remove}" immediate="true" reRender="Available"  >
+                <!-- Pass the row number to the controller so that we know which row to remove -->
+                <apex:param name="index" value="{!rowNum}"/>
+                </apex:commandlink> 
+                <apex:variable var="rowNum" value="{!rowNum+1}"/>
+                </apex:column>
+                  
+                <apex:column value="{!aa.name}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

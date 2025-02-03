@@ -1,0 +1,26 @@
+<apex:page controller="Opp_Search_controller" >
+    <apex:form >
+        <apex:pageBlock id="pb" >
+            <apex:pageBlockSection >
+                <apex:selectList value="{!sel_Stage}" size="1" multiselect="false">
+                
+                    <apex:selectOptions value="{!Stage_name}"/> <apex:actionSupport event="onchange" reRender="pb"   status="currentStatus"/> 
+                    <apex:actionStatus id="currentStatus" startText=" (displaying...)" stopText=" (done)"/>
+                    
+                </apex:selectList>
+            </apex:pageBlockSection><br/>
+            
+            <apex:pageBlockTable value="{!opp_records}" var="op">
+                <apex:column value="{!op.name}"/>
+                <apex:column value="{!op.StageName}"/>
+            </apex:pageBlockTable>
+            
+            <!--<apex:pageBlockSection >
+                <apex:selectList value="{!sel_acc}" size="1" multiselect="false">
+                    <apex:selectOptions value="{!acc_name}"/>
+                </apex:selectList>
+            </apex:pageBlockSection>-->
+            
+        </apex:pageBlock>
+    </apex:form>    
+</apex:page>

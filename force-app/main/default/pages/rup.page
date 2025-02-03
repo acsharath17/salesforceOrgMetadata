@@ -1,0 +1,11 @@
+<apex:page renderAs="pdf" >
+  <html>
+<body>
+
+<p>I will display &euro;</p>
+<p>I will display &#8364;</p>
+<p>I will display &#8377;</p>
+
+</body>
+</html>
+</apex:page>

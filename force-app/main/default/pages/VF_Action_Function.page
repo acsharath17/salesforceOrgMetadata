@@ -1,0 +1,11 @@
+<apex:page controller="actionFunctionController" tabStyle="Account">
+    <apex:form >
+        <apex:actionFunction name="priorityChangedJavaScript" action="{!priorityChanged}" rerender="out"/>
+        <apex:pageBlock >
+            <apex:pageBlockSection title="If you will select High Customer Priority then phone textbox will be shown" columns="1" id="out" collapsible="false">
+                <apex:inputField value="{!acc.CustomerPriority__c}" onchange="priorityChangedJavaScript()"/>
+                <apex:inputField value="{!acc.Phone}" rendered="{!showPhone}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

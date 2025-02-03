@@ -1,0 +1,30 @@
+<apex:page standardController="Account" extensions="New_App_Class,evening_example_3" >
+    <apex:form >
+        <apex:pageBlock >
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!insert_acc}"/>
+                <apex:commandButton value="Google" aCtion="{!go_google}"/>
+            </apex:pageBlockButtons>
+            
+            <apex:pageBlockSection >
+            
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Account Name</apex:outputLabel>
+                    <apex:inputText value="{!a_name}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Website</apex:outputLabel>
+                    <apex:inputText value="{!a_web}"/>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel >Phone</apex:outputLabel>
+                    <apex:inputText value="{!a_ph}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

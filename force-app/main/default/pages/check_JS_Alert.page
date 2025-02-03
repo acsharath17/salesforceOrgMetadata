@@ -1,0 +1,3 @@
+<apex:page >
+<apex:includeScript value="{!$Resource.CheckAlert}"/>
+</apex:page>

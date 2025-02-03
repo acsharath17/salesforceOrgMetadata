@@ -1,0 +1,36 @@
+<aura:component >
+    <aura:attribute name="contactInstance" type="Contact"/>
+    <aura:attribute name="rowIndex" type="string"/>
+    
+    <aura:registerEvent name="DeleteRowEvt" type="c:DeleteRowEvt"/>
+    <aura:registerEvent name="AddRowEvt" type="c:AddNewRowEvt"/>
+    
+    <tr>
+        <td>
+            {!v.rowIndex + 1}
+        </td>
+        <td>
+            <ui:inputText class="slds-input" value="{!v.contactInstance.FirstName}"/>
+        </td>
+        <td>
+            <ui:inputText class="slds-input" value="{!v.contactInstance.LastName}"/>
+        </td>
+        <td>
+            <ui:inputPhone class="slds-input" value="{!v.contactInstance.Phone}"/>
+        </td>
+        <td>
+        	<aura:if isTrue="{!v.rowIndex == 0}">
+            	<a onclick="{!c.AddNewRow}">
+                    <lightning:icon iconName="utility:add" class="slds-icon slds-icon_small" size="small" alternativeText="add"/>
+                    <span class="slds-assistive-text">Add Icon</span>
+                </a>
+                <aura:set attribute="else">
+                	<a onclick="{!c.removeRow}">
+                    <lightning:icon variant="error" iconName="utility:delete" class="slds-icon slds-icon_small" size="small" alternativeText="icon"/>
+                    <span class="slds-assistive-text">Delete Icon</span>
+                    </a>
+                </aura:set>
+            </aura:if>
+        </td>
+    </tr>    
+</aura:component>

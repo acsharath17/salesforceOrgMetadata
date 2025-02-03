@@ -1,0 +1,12 @@
+<apex:page controller="Opp_Insert_Page" >
+    <apex:form >
+        <apex:commandButton value="save" action="{!insert_opp}"/>
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputText value="{!opp_name}"/>
+                
+                <apex:inputText value="{!opp_Stage}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

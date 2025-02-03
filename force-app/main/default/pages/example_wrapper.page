@@ -1,0 +1,21 @@
+<apex:page controller="opp_wrapper">
+   <apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!all_opp}" var="p">
+            <apex:column >
+            <apex:inputCheckbox value="{!p.sel}" />
+            </apex:column>
+            <apex:column value="{!p.opty.name}"/>
+            <apex:column value="{!p.opty.stagename}"/>
+        </apex:pageBlockTable>
+        <br/><br/>
+        
+        <apex:commandButton value="Get Reords" action="{!show_sel}"/>
+        
+        <apex:pageBlockTable value="{!sel_opp}" var="sel">
+            <apex:column value="{!sel.name}"/>
+            <apex:column value="{!sel.stagename}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

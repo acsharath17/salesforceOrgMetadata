@@ -1,0 +1,16 @@
+<apex:page controller="Wizard" >
+<apex:form >
+    <apex:pageBlock >
+        <apex:commandButton value="Go" action="{!call_page}"/>
+        <apex:commandButton value="Go1" action="{!school}"/>
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Select Type</apex:outputLabel>
+                <apex:selectList value="{!selected_value}" size="1">
+                    <apex:selectOptions value="{!sel_type}"></apex:selectOptions>
+                </apex:selectList>
+            </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

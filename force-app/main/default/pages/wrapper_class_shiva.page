@@ -1,0 +1,18 @@
+<apex:page controller="wrapper_class_shiva" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:commandButton value="Show Selected" action="{!selected}"/>
+            <apex:pageBlockTable value="{!wrap_acc}" var="acc1">
+                <apex:column >
+                    <apex:inputCheckbox value="{!acc1.sel}" />
+                </apex:column>
+                <apex:column value="{!acc1.acc.name}"/>
+                <apex:column value="{!acc1.acc.phone}"/>
+            </apex:pageBlockTable><br/><br/>
+            
+            <apex:pageBlockTable value="{!sel_acc}" var="se">
+                <apex:column value="{!se.name}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,60 @@
+<aura:component controller="searchAccountController_v2">
+    <aura:attribute name="searchResult" type="List" description="test"/>
+    <aura:attribute name="searchKeyword" type="string" description ="fields API"/>
+    <aura:attribute name="searchFields" type="string" description ="fields API"/>
+    <aura:attribute name="searchObject" type="string" description = "object API" />
+    <aura:attribute name="totalNumberOfRecord" type="Integer" default="0" description ="Number of records" />
+    
+    <lightning:spinner varient="brand" size="large" aura:Id="Id_Spinner" class="slds-hide"/>
+    
+    <div class="slds-m-around_medium">
+    	<lightning:layout>
+        	<lightning:layoutItem size="3" padding="around-small">
+                <lightning:input value="{!v.searchFields}" required="true"
+                                 placeholder="Field APIs"
+                                 aura:Id = "searchFields"
+                                 label="Disply Field APIs"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="3" padding="around-small">
+                <lightning:input value="{!v.searchObject}" required="true"
+                                 placeholder="Object API"
+                                 aura:Id = "searchObject"
+                                 label="Object API Name"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="3" padding="around-small">
+                <lightning:input value="{!v.searchKeyword}" required="true"
+                                 placeholder="Name"
+                                 aura:Id = "searchKeyword"
+                                 label="Name"/>
+            </lightning:layoutItem>
+            <lightning:layoutItem size="2" padding="around-small">
+                <lightning:button onclick="{!c.search}" variant="brand" label="search" iconName="utility:search" />
+            </lightning:layoutItem>
+        </lightning:layout>
+        
+        <div class="slds-m-around_x-small">
+            <lightning:badge label="{!v.totalNumberOfRecord}"/>
+        </div>
+        
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+        	<thead>
+            	<tr class="slds-text-title_caps">
+                	<th scope="col"> Id </th>
+                    <th scope="col"> Name </th>
+                </tr>
+            </thead>
+            <tbody>
+            	<aura:iteration items="{!v.searchResult}" var="ab" indexVar="count">
+                	<tr>
+                    	<td>
+                        	<div class="slds-truncate">{!ab.Id}</div>
+                        </td>
+                        <td>
+                        	<div class="slds-truncate">{!ab.Name}</div>
+                        </td>
+                    </tr>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </div>
+</aura:component>
