@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Code Review</label>
+    <protected>false</protected>
+    <values>
+        <field>Prompt__c</field>
+        <value xsi:type="xsd:string">Act as a Salesforce Technical Architect review the provided Salesforce Apex code for adherence to Salesforce best practices. Identify potential issues, suggest improvements, and ensure the code is optimized for performance, scalability, and maintainability. Suggestion only if you find any potentioal issues and list them. If possible give the line number to make it easier for developer to understand. Details are provided below are metadata name, metadata type and the Full Metadata Context which conatins the content and it&apos;s related metadata. Only get the content of metadata name and type mentioned for code review
+If you find any improvement that can be made highlight that point in red colour.</value>
+    </values>
+</CustomMetadata>

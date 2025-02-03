@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Individual_tool__c</fullName>
+    <label>Individual tool</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Drill</fullName>
+                <default>false</default>
+                <label>Drill</label>
+            </value>
+            <value>
+                <fullName>Mill</fullName>
+                <default>false</default>
+                <label>Mill</label>
+            </value>
+            <value>
+                <fullName>Reamer</fullName>
+                <default>false</default>
+                <label>Reamer</label>
+            </value>
+            <value>
+                <fullName>Fine boring tool</fullName>
+                <default>false</default>
+                <label>Fine boring tool</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

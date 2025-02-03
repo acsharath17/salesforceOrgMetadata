@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validating_Source_Count_Column</fullName>
+    <active>true</active>
+    <description>This is to check Source Count Column is populated when delta check needs to be performed</description>
+    <errorConditionFormula>AND( Perform_Source_Target_Delta__c ,   ISBLANK(Source_Count_Column_Number__c)  )</errorConditionFormula>
+    <errorDisplayField>Source_Count_Column_Number__c</errorDisplayField>
+    <errorMessage>Please enter a value so that delta check can be performed</errorMessage>
+</ValidationRule>

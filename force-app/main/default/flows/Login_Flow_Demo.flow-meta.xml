@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <decisions>
+        <name>YesOrNo</name>
+        <label>YesOrNo</label>
+        <locationX>228</locationX>
+        <locationY>254</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Do_you_want_to_continue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_Login_Detail</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>CurrentUserId</name>
+        <dataType>String</dataType>
+        <expression>{!$User.Id}</expression>
+    </formulas>
+    <interviewLabel>Login Flow Demo {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Login Flow Demo</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Login_Detail</name>
+        <label>Create Login Detail</label>
+        <locationX>352</locationX>
+        <locationY>380</locationY>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>CurrentUserId</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Login_Detail__c</object>
+    </recordCreates>
+    <screens>
+        <name>Welcome</name>
+        <label>Welcome</label>
+        <locationX>219</locationX>
+        <locationY>96</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>YesOrNo</targetReference>
+        </connector>
+        <fields>
+            <name>Line1</name>
+            <fieldText>Welcome to Login Flow Demo</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Do_you_want_to_continue</name>
+            <dataType>Boolean</dataType>
+            <fieldText>Do you want to continue</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Welcome</startElementReference>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#C23335</headerColor>
+        <logo>logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>E-Bikes</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Product_Explorer</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Product__c</tabs>
+    <tabs>Order__c</tabs>
+    <tabs>Product_Family__c</tabs>
+    <tabs>User_Story__c</tabs>
+    <tabs>Metadata__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>E_Bikes_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Record Search</label>
+    <navType>Standard</navType>
+    <tabs>Search_Setting__c</tabs>
+    <tabs>Record_Search</tabs>
+    <tabs>Dynamic_Record_Search</tabs>
+    <tabs>Tower__c</tabs>
+    <tabs>Proposed_Appointment__c</tabs>
+    <tabs>User_Story__c</tabs>
+    <tabs>Metadata__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Record_Search_UtilityBar</utilityBar>
+</CustomApplication>

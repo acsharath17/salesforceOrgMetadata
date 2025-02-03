@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Training</fullName>
+    <active>true</active>
+    <label>Training</label>
+    <picklistValues>
+        <picklist>Apllication__c</picklist>
+        <values>
+            <fullName>Compressor housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine block</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Filter housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gearbox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transmission housing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Complete_tool_set__c</picklist>
+        <values>
+            <fullName>Tooling list%28no FMT customer drawings%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tooling list%28with FMT Customer drawings%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Coolant__c</picklist>
+        <values>
+            <fullName>AD%2BB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Top</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Coolant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Type__c</picklist>
+        <values>
+            <fullName>Existing Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Customer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Individual_tool__c</picklist>
+        <values>
+            <fullName>Drill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fine boring tool</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mill</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reamer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Source__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Visit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of Mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Oper__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finishing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roughing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Part Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whole Project</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Spindle__c</picklist>
+        <values>
+            <fullName>DIN69871%2FSK40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DIN69871%2FSK50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKA100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKA32</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKA40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKA63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKA80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKC40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HSKC63</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAS30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAS40</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Stage__c</picklist>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Identified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proposal %2F Quote</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Toolholder__c</picklist>
+        <values>
+            <fullName>Hydro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Modular Toolholder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermal Shrink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weldon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>whistle-Notch</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Existing Bussiness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Bussiness</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

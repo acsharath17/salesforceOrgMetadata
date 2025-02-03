@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-Contact</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Library Management</label>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Book__c</tabs>
+    <tabs>Students__c</tabs>
+    <tabs>Teacher__c</tabs>
+    <tabs>Sharat_Sushma_Student_c__x</tabs>
+    <tabs>Expense__c</tabs>
+    <tabs>School_c__x</tabs>
+    <tabs>Search_Setting__c</tabs>
+    <tabs>Tower__c</tabs>
+    <tabs>Proposed_Appointment__c</tabs>
+    <tabs>User_Story__c</tabs>
+    <tabs>Metadata__c</tabs>
+</CustomApplication>

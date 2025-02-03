@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>new_share</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>new share</label>
+        <sharedTo>
+            <group>group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Department__c</field>
+            <operation>equals</operation>
+            <value>Mechanical</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Share_all_record_to_nandy</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Share all record to nandy</label>
+        <sharedTo>
+            <group>Nandy</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

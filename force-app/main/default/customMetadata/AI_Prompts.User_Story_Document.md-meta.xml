@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>User Story Document</label>
+    <protected>false</protected>
+    <values>
+        <field>Prompt__c</field>
+        <value xsi:type="xsd:string">You are a technical writer and Salesforce expert. Based on the provided list of metadata types and metadata names, create a summarized technical document that explains the customizations made in a way that is easy for business users to understand. Ensure the document includes the following:
+
+1. Introduction: A brief overview of the purpose of the customizations and their business value.
+2. Metadata Details: For each metadata type and metadata name:
+    A simple description of its functionality.
+    Why it was implemented (business need it addresses).
+    An example or scenario of how it is used.
+3.Overall Impact: A summary of how these customizations work together to support business processes.</value>
+    </values>
+</CustomMetadata>

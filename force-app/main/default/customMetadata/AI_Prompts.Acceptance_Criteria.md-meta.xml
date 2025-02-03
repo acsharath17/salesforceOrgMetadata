@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Acceptance Criteria</label>
+    <protected>false</protected>
+    <values>
+        <field>Prompt__c</field>
+        <value xsi:type="xsd:string">User Story: A concise description of the requirement with a clear user persona, goal, and benefit.
+Acceptance Criteria: Define measurable and testable conditions to validate the successful implementation of the requirement.
+Test Cases: Create specific test cases with inputs, steps, and expected results that align with the acceptance criteria.
+
+Inputs Provided:
+
+Requirement: Requirement Defined above
+Salesforce Metadata Context:
+Object Details: [e.g., objects involved, fields, relationships]
+Profiles/Roles: [e.g., user roles and profiles affected]
+Record Types: [e.g., applicable record types]
+Automation: [e.g., flows, triggers, workflows impacting the requirement]
+Customizations: [e.g., custom fields, custom objects, validation rules]
+Integrations: [e.g., APIs, external systems involved]</value>
+    </values>
+</CustomMetadata>

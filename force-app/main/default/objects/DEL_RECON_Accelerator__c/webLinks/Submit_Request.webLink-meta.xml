@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submit_Request</fullName>
+    <availability>online</availability>
+    <description>Submit Request to query and get the count</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Submit Request</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/25.0/apex.js&quot;)} 
+
+
+window.open(&apos;/apex/DEL_RECON_AcceleratorRequest?id={!DEL_RECON_Accelerator__c.Id }&apos;,&apos;_blank&apos;,&quot;width=500,height=300&quot;,);</url>
+</WebLink>

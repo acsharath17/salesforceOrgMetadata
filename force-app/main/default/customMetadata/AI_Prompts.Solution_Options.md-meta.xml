@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Solution Options</label>
+    <protected>false</protected>
+    <values>
+        <field>Prompt__c</field>
+        <value xsi:type="xsd:string">Analysis of Metadata Context: Assess the existing Salesforce metadata and identify any relevant objects, fields, automation, or integrations that could be reused or updated.
+Proposed Technical Solution: Provide a detailed technical solution that addresses the user story, including whether to update existing customizations or create new components.
+Implementation Steps:Document detailed step by step instructions for the proposed solution so even a salesforce Intern can understand .
+Additional Considerations: Highlight any potential challenges, dependencies, or limitations in the org context and suggest mitigation strategies.</value>
+    </values>
+</CustomMetadata>

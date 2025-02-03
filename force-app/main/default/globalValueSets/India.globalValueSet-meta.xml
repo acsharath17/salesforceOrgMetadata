@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Karnataka</fullName>
+        <default>false</default>
+        <label>Karnataka</label>
+    </customValue>
+    <customValue>
+        <fullName>Tamil Nadu</fullName>
+        <default>false</default>
+        <label>Tamil Nadu</label>
+    </customValue>
+    <customValue>
+        <fullName>Andra Pradesh</fullName>
+        <default>false</default>
+        <label>Andra Pradesh</label>
+    </customValue>
+    <customValue>
+        <fullName>Mumbai</fullName>
+        <default>false</default>
+        <label>Mumbai</label>
+    </customValue>
+    <customValue>
+        <fullName>Delhi</fullName>
+        <default>false</default>
+        <label>Delhi</label>
+    </customValue>
+    <customValue>
+        <fullName>Gujarat</fullName>
+        <default>false</default>
+        <label>Gujarat</label>
+    </customValue>
+    <customValue>
+        <fullName>Assam</fullName>
+        <default>false</default>
+        <label>Assam</label>
+    </customValue>
+    <masterLabel>India</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

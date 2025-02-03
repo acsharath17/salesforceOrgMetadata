@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>BeSureToExploreTheSampleProject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Be sure to explore the sample project, &quot;HOWTO: Get Started with Milestones PM&quot;.</shortDescription>
+        <value>Be sure to explore the sample project, &quot;HOWTO: Get Started with Milestones PM&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>ClickHere</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click Here</shortDescription>
+        <value>Click Here</value>
+    </labels>
+    <labels>
+        <fullName>ClickHereToInitializeThisApp</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click here to initialize this app</shortDescription>
+        <value>Click here to initialize this app</value>
+    </labels>
+    <labels>
+        <fullName>Community</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Community</shortDescription>
+        <value>Community</value>
+    </labels>
+    <labels>
+        <fullName>Create_User_Story_Prompt</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create User Story Prompt</shortDescription>
+        <value>Persona: As a [persona]...
+Objective: I want to [objective]...
+Benefit: So that I can [benefit]...
+Acceptance Criteria Template: Given [condition], When [action], Then [outcome]...
+Test Case Template:
+ID: [test_case_id]
+Title: [test_case_title]
+Steps: [test_case_steps]
+Expected Result: [test_case_expected_result]
+Technical Considerations: Include dependencies, limitations, and integrations with Salesforce-specific features.</value>
+    </labels>
+    <labels>
+        <fullName>Credit_Hold_Hard_Hold</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Credit Hold Hard Hold</shortDescription>
+        <value>Quote is on hard hold</value>
+    </labels>
+    <labels>
+        <fullName>Credit_Hold_Hard_Hold_Override</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Credit Hold Hard Hold Override</shortDescription>
+        <value>Hard Hold Override</value>
+    </labels>
+    <labels>
+        <fullName>Credit_Hold_Soft_Hold</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Credit Hold Soft Hold</shortDescription>
+        <value>Quote is on soft hold</value>
+    </labels>
+    <labels>
+        <fullName>ForCommunityAssistance</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For community assistance with Milestones PM, please visit &lt;a href=&quot;http://succes</shortDescription>
+        <value>For community assistance with Milestones PM, please visit &lt;a href=&quot;http://success.salesforce.com/answers&quot;&gt;Salesforce Answers&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>GettingHelp</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Help</shortDescription>
+        <value>Getting Help</value>
+    </labels>
+    <labels>
+        <fullName>ImportantUpper</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>IMPORTANT</shortDescription>
+        <value>IMPORTANT</value>
+    </labels>
+    <labels>
+        <fullName>InitializationComplete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialization Complete!</shortDescription>
+        <value>Initialization Complete!</value>
+    </labels>
+    <labels>
+        <fullName>InitializeYourConfiguration</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialize your configuration using the button below.</shortDescription>
+        <value>Initialize your configuration using the button below.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_AddQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Question</shortDescription>
+        <value>Add Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Anonymous</shortDescription>
+        <value>Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Answer_as</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Answer as</shortDescription>
+        <value>Answer as</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter</shortDescription>
+        <value>Chatter</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Chatter_Link</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Chatter Link</shortDescription>
+        <value>Chatter Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Community</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Community</shortDescription>
+        <value>Community</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_ContactWithCase</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact with Case</shortDescription>
+        <value>Contact with Case:</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_CurrentSurveys</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Current Surveys</shortDescription>
+        <value>Current Surveys</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Delete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Delete_Confirm</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Are you sure you want to delete this survey?</shortDescription>
+        <value>Are you sure you want to delete this survey?</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Edit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_Anonymous</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link, Anonymous</shortDescription>
+        <value>Email Link, Anonymous</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Case_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact &amp; Case Merge</shortDescription>
+        <value>Email Link w/ Contact &amp; Case Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Email_Link_w_Contact_Merge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Link w/ Contact Merge</shortDescription>
+        <value>Email Link w/ Contact Merge</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_EnterSurveyName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Enter Survey Name</shortDescription>
+        <value>Enter Survey Name</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_External_Please_Create_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For external facing surveys, please create a site first.  You may still create i</shortDescription>
+        <value>For external facing surveys, please create a site first.  You may still create internal surveys without creating a site.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_For_community_assistance_with_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>For community assistance with Survey Force</shortDescription>
+        <value>For community assistance with Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Getting_Help</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Help</shortDescription>
+        <value>Getting Help</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_HeaderAndThankYou</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Header and Thank You</shortDescription>
+        <value>Header, Thank You &amp; CSS</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Installation_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Installation Guide</shortDescription>
+        <value>Installation Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Internal</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Internal</shortDescription>
+        <value>Internal</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_JustContact</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Just Contact</shortDescription>
+        <value>Just Contact</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Learn_More</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Learn More</shortDescription>
+        <value>Learn More</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeANewSurvey</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Make A New Survey</shortDescription>
+        <value>Make A New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_MakeNewSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make New Survey</shortDescription>
+        <value>Make New Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Make_a_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Make a Sample Survey</shortDescription>
+        <value>Make a Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Next_Steps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Steps</shortDescription>
+        <value>Next Steps</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_PleaseEnterTheList</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please enter the list</shortDescription>
+        <value>Please enter the list of answers/responses in the field below. Each value should be separated by a new line.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Question</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Question</shortDescription>
+        <value>Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required</shortDescription>
+        <value>required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_RequiredQuestion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Question</shortDescription>
+        <value>Required Question</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Resources</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Resources</shortDescription>
+        <value>Resources</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Results</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Results</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTSITE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SELECT SITE</shortDescription>
+        <value>--SELECT SITE--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SELECTTYPE</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>--SELECT--</shortDescription>
+        <value>--SELECT--</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Salesforce_Answers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Salesforce Answers</shortDescription>
+        <value>Salesforce Answers</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SaveOrder</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save Order</shortDescription>
+        <value>Save Order</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectQuestionType</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Question Type</shortDescription>
+        <value>Select Question Type</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SelectSitetodisplaySurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Site to display Survey</shortDescription>
+        <value>Select Site to display Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share</shortDescription>
+        <value>Share</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Share_My_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Share My Survey</shortDescription>
+        <value>Share My Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Sharing_Options</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sharing Options</shortDescription>
+        <value>Sharing Options</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SubmitSurvey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit Survey</shortDescription>
+        <value>Submit Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyForceIsOpenSource</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SurveyForceIsOpenSource</shortDescription>
+        <value>Survey Force is Open Source software.  We welcome your issue reports, ideas, documentation, code tweaks and all other participation.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_SurveyURLLink</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey URL Link</shortDescription>
+        <value>Survey URL Link</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_is_unsupported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force is unsupported</shortDescription>
+        <value>Survey Force is unsupported.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Force_on_Github</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Force on Github</shortDescription>
+        <value>Survey Force on Github</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Name_Is_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Name Is Required</shortDescription>
+        <value>Survey Name is Required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Site_Is_Required</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Survey Site Is Required</shortDescription>
+        <value>Survey Site Is Required</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Survey_Submitted_Thank_you</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your survey has been submitted. Thank you for taking our survey.</shortDescription>
+        <value>Your survey has been submitted. Thank you for taking our survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_To_submit_ideas_or_issues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To submit ideas or issues</shortDescription>
+        <value>To submit ideas or issues</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_User_Guide</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>User Guide</shortDescription>
+        <value>User Guide</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Results_In_New_Window</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Results In New Window</shortDescription>
+        <value>View Results In New Window</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_View_Sample_Survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View Sample Survey</shortDescription>
+        <value>View Sample Survey</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Welcome_to_Survey_Force</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome to Survey Force</shortDescription>
+        <value>Welcome to Survey Force</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X1_Create_a_sample_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>1. Create a sample survey by clicking the button below.</shortDescription>
+        <value>1. Create a sample survey by clicking the button below.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X2_External_Setup_Site</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>2. Set up a site if you would like to have external-facing surveys.</shortDescription>
+        <value>2. Set up a site if you would like to have external-facing surveys.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_X3_Start_creating_your_first_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>3. Start creating your first survey.</shortDescription>
+        <value>3. Start creating your first survey.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_You_have_already_taken_this_survey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You have already taken this survey!</shortDescription>
+        <value>You have already taken this survey!</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_Your_next_few_steps_are_easy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your next few steps are easy.</shortDescription>
+        <value>Your next few steps are easy.</value>
+    </labels>
+    <labels>
+        <fullName>LABS_SF_please_visit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>please visit</shortDescription>
+        <value>please visit</value>
+    </labels>
+    <labels>
+        <fullName>LearnMore</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>&lt;a href=&quot;http://blogs.developerforce.com/labs/2011/08/howto-contribute-to-milest</shortDescription>
+        <value>&lt;a href=&quot;http://blogs.developerforce.com/labs/2011/08/howto-contribute-to-milestones-pm-code-not-required-opensource.html&quot;&gt;Learn more&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ALiasNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ALiasNotFound</shortDescription>
+        <value>The alias provided in subject line did not match a milestone alias in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_AllItems</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AllItems</shortDescription>
+        <value>All Items</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_AllOpenTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AllOpenTasks</shortDescription>
+        <value>All Open Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_AnErrorHasOcurred</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AnErrorHasOcurred</shortDescription>
+        <value>An error has ocurred:</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Back</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_BlockedTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Blocked Tasks</shortDescription>
+        <value>Blocked Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Blocked_Tasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Blocked_Tasks</shortDescription>
+        <value>Blocked Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Calendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Calendar</shortDescription>
+        <value>Calendar</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_CalendarLegend</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CalendarLegend</shortDescription>
+        <value>Calendar Legend</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_CheckActive</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Check &quot;Active&quot;</shortDescription>
+        <value>Check &quot;Active&quot;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ClickNewEmailService</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click &quot;New Email Service&quot;.</shortDescription>
+        <value>Click &quot;New Email Service&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ClickSaveAndNewEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click &quot;Save and New Email Address&quot;.</shortDescription>
+        <value>Click &quot;Save and New Email Address&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ContentIsNotAllowedInProlog</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Content is not allowed in prolog.</shortDescription>
+        <value>Content is not allowed in prolog.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_CurrentExport</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CurrentExport</shortDescription>
+        <value>. Current export would be $1 characters long. Please edit your project and try again</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_DidNotMatch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>DidNotMatch</shortDescription>
+        <value>) did not match any milestone.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_EnterAcommand</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EnterAcommand</shortDescription>
+        <value>Enter a command in the form &apos;alias --- description&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Expenses</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Expenses</shortDescription>
+        <value>Expenses</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Filter</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FilterCalendarBy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FilterCalendarBy</shortDescription>
+        <value>Filter Calendar By</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FilterProjectBy</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone1_FilterProjectBy</shortDescription>
+        <value>Filter Project By</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Friday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Friday</shortDescription>
+        <value>Friday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FromUsersNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FromUsersNotFound</shortDescription>
+        <value>The email sender did not match a user in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FullMonth</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Full Month</shortDescription>
+        <value>Full Month</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_FullView</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>FullView</shortDescription>
+        <value>[Full View]</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_GettingStarted</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Getting Started</shortDescription>
+        <value>Getting Started</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_GiveEmailServiceName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Give a Email Service Name &quot;Email To Milestone Task&quot;.</shortDescription>
+        <value>Give a Email Service Name &quot;Email To Milestone Task&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_GoToSetupDevelopEmailServices</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Go to Setup -&gt; Develop -&gt; Email Services</shortDescription>
+        <value>Go to Setup -&gt; Develop -&gt; Email Services</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Import</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import</shortDescription>
+        <value>Import</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportFailed</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Failed -- Milestone was unable to import your file.</shortDescription>
+        <value>Import Failed -- Milestone was unable to import your file.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportLocalTemplateXML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImportLocalTemplateXML</shortDescription>
+        <value>Import Local Template XML</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportTemplate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Template</shortDescription>
+        <value>Import Template</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ImportTemplateXML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ImportTemplateXML</shortDescription>
+        <value>Import Template XML from My Personal Documents</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InactiveUsersError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone1_InactiveUsersError</shortDescription>
+        <value>Clone was not successful because one or more records belong to inactive users.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_IncompleteTasksByPriority</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Incomplete Tasks By Priority</shortDescription>
+        <value>Incomplete Tasks By Priority</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_IncompleteTasksByProjects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Incomplete Tasks By Projects</shortDescription>
+        <value>Incomplete Tasks By Projects</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InsufficientPrivileges</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient privileges to access project.</shortDescription>
+        <value>Insufficient privileges to access project.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InsufficientPrivilegesToAccessParentMilestone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient privileges to access parent milestone.</shortDescription>
+        <value>Insufficient privileges to access parent milestone.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InvalidName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvalidName</shortDescription>
+        <value>&apos;Invalid name (length cannot be zero)&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_InvalidVersion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InvalidVersion</shortDescription>
+        <value>Invalid Version. This project was exported from a different version(</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_LateTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Late Tasks</shortDescription>
+        <value>Late Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Loading</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Loading</shortDescription>
+        <value>Loading, please wait...</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Logs</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Logs</shortDescription>
+        <value>Logs</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MainMenu</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MainMenu</shortDescription>
+        <value>Milestones PM - Main Menu</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MaximumPer</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MaximumPer</shortDescription>
+        <value>Maximum per user chatter subscription limit has been exceeded</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneApplicationPostInstallation</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone Application Post Installation Instructions</shortDescription>
+        <value>Milestone Application Post Installation Instructions</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneClone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestoneClone</shortDescription>
+        <value>Milestone Clone</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneIsComplete</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone is Complete, the Task can not be moved</shortDescription>
+        <value>Milestone is Complete, the Task can not be moved</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestoneRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Milestone records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestoneYouAreAttempting</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>A milestone you are attempting to move is already assigned to this project. Plea</shortDescription>
+        <value>A milestone you are attempting to move is already assigned to this project. Please review your selection and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Milestones</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones</shortDescription>
+        <value>Milestones</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestonesCalendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestonesCalendar</shortDescription>
+        <value>Milestones</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestonesOpenTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MilestonesOpenTasks</shortDescription>
+        <value>Milestones &amp; Open Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MilestonesShouldNotBeMoved</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones should not be moved to different Projects, except through the &quot;Move t</shortDescription>
+        <value>Milestones should not be moved to different Projects, except through the &quot;Move to New Project&quot; button in Milestone list view.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Monday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Monday</shortDescription>
+        <value>Monday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Milestone records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneS</shortDescription>
+        <value>Move Milestone(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestoneSave</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestoneSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestone_Cancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestone_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestone_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestone_Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveMilestone_s</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveMilestone_s</shortDescription>
+        <value>Move Milestone(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailAttachmentsRecords</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailAttachmentsRecords</shortDescription>
+        <value>One or more of the selected Task records cannot be moved because it has related Time, Expense, or Notes &amp; Attachments records.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailCancel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailCancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailS</shortDescription>
+        <value>Move Task(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailSave</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskDetailTaskRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskDetailTaskRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Task records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskRecordsToMove</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskRecordsToMove</shortDescription>
+        <value>Please return to the previous screen and select one or more Task records to move.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskS</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskS</shortDescription>
+        <value>Move Task(s)</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MoveTaskSave</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MoveTaskSave</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyIncompleteTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My Incomplete Tasks</shortDescription>
+        <value>My Incomplete Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyMilestonesOnly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyMilestonesOnly</shortDescription>
+        <value>My Milestones Only</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyProjectsAndSubProjectItems</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyProjectsAndSubProjectItems</shortDescription>
+        <value>My Projects And Sub-Project Items</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyTasks</shortDescription>
+        <value>My Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_MyTasksOnly</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MyTasksOnly</shortDescription>
+        <value>My Tasks Only</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NewFieldToReplaceInactiveUsers</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestone1_NewFieldToReplaceInactiveUsers</shortDescription>
+        <value>Replace All Inactive Users With</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NewMilestoneName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewMilestoneName</shortDescription>
+        <value>New Milestone Name</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NewProjectName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>NewProjectName</shortDescription>
+        <value>New Project Name</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NoImportXMLFilesSelected</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No import XML files selected. Please select an XML file to import.</shortDescription>
+        <value>No import XML files selected. Please select an XML file to import.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_NoProjects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No projects!</shortDescription>
+        <value>No projects!</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_OrganizationsVersion</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OrganizationsVersion</shortDescription>
+        <value>) than this organizations version(</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_OverdueTasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>OverdueTasks</shortDescription>
+        <value>Overdue Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_PleaseUseFormat</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PleaseUseFormat</shortDescription>
+        <value>The line command was incorrect. Please use format &lt;Alias&gt; --- &lt;DESCRIPTION&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectCannotBeNull</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectCannotBeNull</shortDescription>
+        <value>The Project cannot be null. This is a critical error during import of XML. Please try exporting and re-importing.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectClone</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectClone</shortDescription>
+        <value>Project Clone</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectDetail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectDetail</shortDescription>
+        <value>Project Detail</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectIsTooLarge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectIsTooLarge</shortDescription>
+        <value>Project is too large to export. Total characters must be less than</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectXML</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectXML</shortDescription>
+        <value>Project XML Export Process</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectXMLImport</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectXMLImport</shortDescription>
+        <value>Project XML Import Process</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Projects</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Projects</shortDescription>
+        <value>Projects</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectsCalendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectsCalendar</shortDescription>
+        <value>Projects</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ProjectsMustBeExported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ProjectsMustBeExported</shortDescription>
+        <value>). Projects must be exported and imported in same version.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_QuickSearch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>QuickSearch</shortDescription>
+        <value>Quick Search - Project Components</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_RegexFwdRe</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>RegexFwdRe</shortDescription>
+        <value>^[ ]*((([Ff][Ww][Dd])|([Rr][Ee]))[ ]*:[ ]*)*</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SalesforceDMLError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SalesforceDMLError</shortDescription>
+        <value>There was a Salesforce DML Error:</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Saturday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Saturday</shortDescription>
+        <value>Saturday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Save</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SelectTheApexClass</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select the Apex Class &quot;Milestone1_Email_Handler&quot;.</shortDescription>
+        <value>Select the Apex Class &quot;Milestone1_Email_Handler&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetAcceptAttachmentsToAll</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set &quot;Accept Attachments&quot; to &quot;All&quot;.</shortDescription>
+        <value>Set &quot;Accept Attachments&quot; to &quot;All&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetAcceptEmailFromToAllEmail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set &quot;Accept Email From&quot; to &quot;All Email Addresses&quot;.</shortDescription>
+        <value>Set &quot;Accept Email From&quot; to &quot;All Email Addresses&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetAllFailureResponseOptions</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set All Failure Response options to &apos;Bounce Message&apos;.</shortDescription>
+        <value>Set All Failure Response options to &apos;Bounce Message&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SettingsAlreadyExistNoChanges</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Settings already exist.  No changes made.</shortDescription>
+        <value>Settings already exist.  No changes made.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SetupNewEmailAddress</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Setup A New Email Address.</shortDescription>
+        <value>Setup A New Email Address.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubMilestonesCanOnlyGoOneLevelDeep</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sub-milestones can only go one level deep. Please select a top-level milestone a</shortDescription>
+        <value>Sub-milestones can only go one level deep. Please select a top-level milestone as this record\&apos;s parent milestone.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubjectMissing</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SubjectMissing</shortDescription>
+        <value>The subject line did is empty.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubjectMissingAlias</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SubjectMissingAlias</shortDescription>
+        <value>The subject line did not contain a milestone alias.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SubjectMissingTask</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SubjectMissingTask</shortDescription>
+        <value>The subject line did not contain a task.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Submit</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Summary</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Summary</shortDescription>
+        <value>Summary</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_SummarySearch</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SummarySearch</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Sunday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sunday</shortDescription>
+        <value>Sunday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TaskNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TaskNotFound</shortDescription>
+        <value>A matching task was not found for this Email thread in Salesforce. Salesforce was unable to attach this email to the notes for a task.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TaskYouAreAttempting</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>A task you are attempting to move is already assigned to this milestone. Please</shortDescription>
+        <value>A task you are attempting to move is already assigned to this milestone. Please review your selection and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Tasks</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tasks</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TasksCalendar</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TasksCalendar</shortDescription>
+        <value>Tasks</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TheProjectCannotBeNull</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The Project cannot be null. This is a critical error during import of XML. Pleas</shortDescription>
+        <value>The Project cannot be null. This is a critical error during import of XML. Please try exporting and re-importing.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TheXMLFileForYourProjectHasBeenSuccessfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The XML file for your project has been successfully created, and can be found in</shortDescription>
+        <value>The XML file for your project has been successfully created, and can be found in the My Personal Documents folder.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TheXMLFileIsTooLarge</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>The XML file is too large.</shortDescription>
+        <value>The XML file is too large.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Thealias</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thealias</shortDescription>
+        <value>The alias(</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Thursday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Thursday</shortDescription>
+        <value>Thursday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Times</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Times</shortDescription>
+        <value>Times</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToConfigureTheEmail</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To configure the Email To Task Service</shortDescription>
+        <value>To configure the Email To Task Service</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToUsersNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ToUsersNotFound</shortDescription>
+        <value>The list of recipients did not have any matches to a user in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToViewXML_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click here</shortDescription>
+        <value>Click here</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToViewXML_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to view the XML file in the My Personal Documents folder.</shortDescription>
+        <value>to view the XML file in the My Personal Documents folder.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToYourProject_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Click here</shortDescription>
+        <value>Click here</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_ToYourProject_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to return to your project.</shortDescription>
+        <value>to return to your project.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TopLevelMilestoneHasPredecessor</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Top Level Milestone has predecessor and cannot be moved.  Remove that predecesso</shortDescription>
+        <value>Top Level Milestone has predecessor and cannot be moved.  Remove that predecessor and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_TopLevelMilestoneHasSuccessors</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Top Level Milestone has successors and cannot be moved.  Redirect those successo</shortDescription>
+        <value>Top Level Milestone has successors and cannot be moved.  Redirect those successors and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Tuesday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tuesday</shortDescription>
+        <value>Tuesday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_UsersNotFound</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UsersNotFound</shortDescription>
+        <value>The User seaches for Assignment (To Address) and/or Ownership (From Address) did not find matches to users in Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_Wednesday</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Wednesday</shortDescription>
+        <value>Wednesday</value>
+    </labels>
+    <labels>
+        <fullName>Milestone1_YourProjectCouldNotSuccessfully</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your project could not successfully be exported to an XML document.</shortDescription>
+        <value>Your project could not successfully be exported to an XML document.</value>
+    </labels>
+    <labels>
+        <fullName>MilestonesPMISOpenSource</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones PM is Open Source software.</shortDescription>
+        <value>Milestones PM is Open Source software.</value>
+    </labels>
+    <labels>
+        <fullName>MilestonesPMIsUnsupported</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Milestones PM is unsupported.</shortDescription>
+        <value>Milestones PM is unsupported.</value>
+    </labels>
+    <labels>
+        <fullName>Neo4j_Details</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Neo4j Details</shortDescription>
+        <value># Wait 60 seconds before connecting using these details, or login to https://console.neo4j.io to validate the Aura Instance is available
+NEO4J_URI=neo4j+s://4cb68104.databases.neo4j.io
+NEO4J_USERNAME=neo4j
+NEO4J_PASSWORD=Rl2cKAPn0K-9-T_36ylCr3b9JciyABmvGkKwwBIfWhg
+AURA_INSTANCEID=4cb68104
+AURA_INSTANCENAME=Instance01</value>
+    </labels>
+    <labels>
+        <fullName>Neo4j_Password</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Neo4j Password</shortDescription>
+        <value>Rl2cKAPn0K-9-T_36ylCr3b9JciyABmvGkKwwBIfWhg</value>
+    </labels>
+    <labels>
+        <fullName>Neo4j_UserName</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Neo4j UserName</shortDescription>
+        <value>neo4j</value>
+    </labels>
+    <labels>
+        <fullName>NextSteps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next Steps</shortDescription>
+        <value>Next Steps</value>
+    </labels>
+    <labels>
+        <fullName>Open_AI_API_Key</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Open AI API Key</shortDescription>
+        <value>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</value>
+    </labels>
+    <labels>
+        <fullName>ProjectSummary_FirstHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Project Summary Page</shortDescription>
+        <value>Project Summary Page</value>
+    </labels>
+    <labels>
+        <fullName>ProjectSummary_SecondHalf</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>to start using Milestones PM.</shortDescription>
+        <value>to start using Milestones PM.</value>
+    </labels>
+    <labels>
+        <fullName>Solution_Options</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Solution Options</shortDescription>
+        <value>Describe the method: Include the technical solution (e.g., declarative, programmatic, or hybrid).
+Key components: Specify Salesforce features, tools, or technologies used (e.g., Process Builder, Flow, Apex, LWC, Marketing Cloud, etc.).
+Advantages: Highlight the benefits of the approach, such as scalability, maintainability, or simplicity.
+Limitations: List potential drawbacks or scenarios where this approach may not be ideal.
+Example Use Cases: Provide relevant use cases where this approach would fit best.
+Technical Considerations: Note dependencies, integration requirements, or other Salesforce-specific constraints.</value>
+    </labels>
+    <labels>
+        <fullName>StartCreatingYourFirstProject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Start creating your first project.</shortDescription>
+        <value>Start creating your first project.</value>
+    </labels>
+    <labels>
+        <fullName>ThisSampleProjectIncludes</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This sample project includes the remaining configuration steps as well as ideas</shortDescription>
+        <value>This sample project includes the remaining configuration steps as well as ideas on how you can get the most out of Milestones PM.</value>
+    </labels>
+    <labels>
+        <fullName>ToSubmitIdeasOrIssues</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To submit ideas or issues, please visit &lt;a href=&quot;https://github.com/ForceDotComL</shortDescription>
+        <value>To submit ideas or issues, please visit &lt;a href=&quot;https://github.com/ForceDotComLabs/Milestones-PM&quot;&gt;Milestones PM on Github&lt;/a&gt;.</value>
+    </labels>
+    <labels>
+        <fullName>ViewTheGettingStartedProject</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View the &quot;Getting Started&quot; project created as part of your initial configuration</shortDescription>
+        <value>View the &quot;Getting Started&quot; project created as part of your initial configuration.</value>
+    </labels>
+    <labels>
+        <fullName>WeWelcomeYourIssueReports</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>We welcome your issue reports, ideas, documentation, code tweaks and all other p</shortDescription>
+        <value>We welcome your issue reports, ideas, documentation, code tweaks and all other participation.</value>
+    </labels>
+    <labels>
+        <fullName>WelcomeToMilestonesPM</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome to Milestones PM - Project Management</shortDescription>
+        <value>Welcome to Milestones PM - Project Management</value>
+    </labels>
+    <labels>
+        <fullName>YouCanNowGoTo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>You can now go to your project summary page to see the sample project we install</shortDescription>
+        <value>You can now go to your project summary page to see the sample project we installed.</value>
+    </labels>
+    <labels>
+        <fullName>YourNextFewSteps</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your next few steps are easy.</shortDescription>
+        <value>Your next few steps are easy.</value>
+    </labels>
+    <labels>
+        <fullName>chatGPTAPIKey</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>API Key for Chat GPT Integration</shortDescription>
+        <value>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</value>
+    </labels>
+    <labels>
+        <fullName>gitHubToken</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>gitHubToken</shortDescription>
+        <value>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</value>
+    </labels>
+</CustomLabels>
